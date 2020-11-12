@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\TechCIT\\Money-Exchange\\src\\ProgotiExchange\\ProgotiExchange.Services\\ProgotiExchange.Services.csproj": {}
+  },
+  "projects": {
+    "D:\\TechCIT\\Money-Exchange\\src\\ProgotiExchange\\ProgotiExchange.Repositories\\ProgotiExchange.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\TechCIT\\Money-Exchange\\src\\ProgotiExchange\\ProgotiExchange.Repositories\\ProgotiExchange.Repositories.csproj",
+        "projectName": "ProgotiExchange.Repositories",
+        "projectPath": "D:\\TechCIT\\Money-Exchange\\src\\ProgotiExchange\\ProgotiExchange.Repositories\\ProgotiExchange.Repositories.csproj",
+        "packagesPath": "C:\\Users\\Sajjad\\.nuget\\packages\\",
+        "outputPath": "D:\\TechCIT\\Money-Exchange\\src\\ProgotiExchange\\ProgotiExchange.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Sajjad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "OpenIddict": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "OpenIddict.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.0.18, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\TechCIT\\Money-Exchange\\src\\ProgotiExchange\\ProgotiExchange.Services\\ProgotiExchange.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\TechCIT\\Money-Exchange\\src\\ProgotiExchange\\ProgotiExchange.Services\\ProgotiExchange.Services.csproj",
+        "projectName": "ProgotiExchange.Services",
+        "projectPath": "D:\\TechCIT\\Money-Exchange\\src\\ProgotiExchange\\ProgotiExchange.Services\\ProgotiExchange.Services.csproj",
+        "packagesPath": "C:\\Users\\Sajjad\\.nuget\\packages\\",
+        "outputPath": "D:\\TechCIT\\Money-Exchange\\src\\ProgotiExchange\\ProgotiExchange.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Sajjad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\TechCIT\\Money-Exchange\\src\\ProgotiExchange\\ProgotiExchange.Repositories\\ProgotiExchange.Repositories.csproj": {
+                "projectPath": "D:\\TechCIT\\Money-Exchange\\src\\ProgotiExchange\\ProgotiExchange.Repositories\\ProgotiExchange.Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+D:\TechCIT\Money-Exchange\src\ProgotiExchange\ProgotiExchange.Services\bin\Debug\netcoreapp2.2\ProgotiExchange.Services.deps.json
+D:\TechCIT\Money-Exchange\src\ProgotiExchange\ProgotiExchange.Services\bin\Debug\netcoreapp2.2\ProgotiExchange.Services.dll
+D:\TechCIT\Money-Exchange\src\ProgotiExchange\ProgotiExchange.Services\bin\Debug\netcoreapp2.2\ProgotiExchange.Services.pdb
+D:\TechCIT\Money-Exchange\src\ProgotiExchange\ProgotiExchange.Services\bin\Debug\netcoreapp2.2\ProgotiExchange.Repositories.dll
+D:\TechCIT\Money-Exchange\src\ProgotiExchange\ProgotiExchange.Services\bin\Debug\netcoreapp2.2\ProgotiExchange.Repositories.pdb
+D:\TechCIT\Money-Exchange\src\ProgotiExchange\ProgotiExchange.Services\obj\Debug\netcoreapp2.2\ProgotiExchange.Services.csprojAssemblyReference.cache
+D:\TechCIT\Money-Exchange\src\ProgotiExchange\ProgotiExchange.Services\obj\Debug\netcoreapp2.2\ProgotiExchange.Services.csproj.CoreCompileInputs.cache
+D:\TechCIT\Money-Exchange\src\ProgotiExchange\ProgotiExchange.Services\obj\Debug\netcoreapp2.2\ProgotiExchange.Services.AssemblyInfoInputs.cache
+D:\TechCIT\Money-Exchange\src\ProgotiExchange\ProgotiExchange.Services\obj\Debug\netcoreapp2.2\ProgotiExchange.Services.AssemblyInfo.cs
+D:\TechCIT\Money-Exchange\src\ProgotiExchange\ProgotiExchange.Services\obj\Debug\netcoreapp2.2\ProgotiExchange.Services.csproj.CopyComplete
+D:\TechCIT\Money-Exchange\src\ProgotiExchange\ProgotiExchange.Services\obj\Debug\netcoreapp2.2\ProgotiExchange.Services.dll
+D:\TechCIT\Money-Exchange\src\ProgotiExchange\ProgotiExchange.Services\obj\Debug\netcoreapp2.2\ProgotiExchange.Services.pdb

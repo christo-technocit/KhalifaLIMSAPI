@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>KU.Repositories</id>
+    <version>1.0.0</version>
+    <authors>KU.Repositories</authors>
+    <owners>KU.Repositories</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.2">
+        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Identity.Stores" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="OpenIddict" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="OpenIddict.EntityFrameworkCore" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Linq.Dynamic.Core" version="1.0.18" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\TCIT\Khalifa University\Khalifa\KU.Repositories\bin\Release\netcoreapp2.2\KU.Repositories.dll" target="lib\netcoreapp2.2\KU.Repositories.dll" />
+  </files>
+</package>

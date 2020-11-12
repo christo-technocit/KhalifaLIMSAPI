@@ -1,0 +1,12 @@
+C:\TCIT\Khalifa University\Khalifa\KU.Services\bin\Release\netcoreapp2.2\KU.Services.deps.json
+C:\TCIT\Khalifa University\Khalifa\KU.Services\bin\Release\netcoreapp2.2\KU.Services.dll
+C:\TCIT\Khalifa University\Khalifa\KU.Services\bin\Release\netcoreapp2.2\KU.Services.pdb
+C:\TCIT\Khalifa University\Khalifa\KU.Services\bin\Release\netcoreapp2.2\KU.Repositories.dll
+C:\TCIT\Khalifa University\Khalifa\KU.Services\bin\Release\netcoreapp2.2\KU.Repositories.pdb
+C:\TCIT\Khalifa University\Khalifa\KU.Services\obj\Release\netcoreapp2.2\KU.Services.csprojAssemblyReference.cache
+C:\TCIT\Khalifa University\Khalifa\KU.Services\obj\Release\netcoreapp2.2\KU.Services.AssemblyInfoInputs.cache
+C:\TCIT\Khalifa University\Khalifa\KU.Services\obj\Release\netcoreapp2.2\KU.Services.AssemblyInfo.cs
+C:\TCIT\Khalifa University\Khalifa\KU.Services\obj\Release\netcoreapp2.2\KU.Services.csproj.CoreCompileInputs.cache
+C:\TCIT\Khalifa University\Khalifa\KU.Services\obj\Release\netcoreapp2.2\KU.Services.csproj.CopyComplete
+C:\TCIT\Khalifa University\Khalifa\KU.Services\obj\Release\netcoreapp2.2\KU.Services.dll
+C:\TCIT\Khalifa University\Khalifa\KU.Services\obj\Release\netcoreapp2.2\KU.Services.pdb

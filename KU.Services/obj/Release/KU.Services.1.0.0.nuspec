@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>KU.Services</id>
+    <version>1.0.0</version>
+    <authors>KU.Services</authors>
+    <owners>KU.Services</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.2">
+        <dependency id="KU.Repositories" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="AutoMapper" version="7.0.1" exclude="Build,Analyzers" />
+        <dependency id="FluentValidation.AspNetCore" version="8.4.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\TCIT\Khalifa University\Khalifa\KU.Services\bin\Release\netcoreapp2.2\KU.Services.dll" target="lib\netcoreapp2.2\KU.Services.dll" />
+  </files>
+</package>

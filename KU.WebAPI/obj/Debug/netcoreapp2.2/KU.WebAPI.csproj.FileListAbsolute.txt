@@ -1,0 +1,92 @@
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\bin\Debug\netcoreapp2.2\appsettings.json
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.deps.json
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.runtimeconfig.json
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.runtimeconfig.dev.json
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.dll
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.pdb
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Repositories.dll
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Services.dll
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Services.pdb
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Repositories.pdb
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.csprojAssemblyReference.cache
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.csproj.CoreCompileInputs.cache
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.RazorAssemblyInfo.cache
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.RazorAssemblyInfo.cs
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.AssemblyInfoInputs.cache
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.AssemblyInfo.cs
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.RazorTargetAssemblyInfo.cache
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.csproj.CopyComplete
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.dll
+D:\TechCIT\KU_Tech\src\Khalifa\KU\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.pdb
+E:\Khalifa\Sajath\KU.WebAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+E:\Khalifa\Sajath\KU.WebAPI\bin\Debug\netcoreapp2.2\appsettings.json
+E:\Khalifa\Sajath\KU.WebAPI\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+E:\Khalifa\Sajath\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.deps.json
+E:\Khalifa\Sajath\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.runtimeconfig.json
+E:\Khalifa\Sajath\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.runtimeconfig.dev.json
+E:\Khalifa\Sajath\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.dll
+E:\Khalifa\Sajath\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.pdb
+E:\Khalifa\Sajath\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Repositories.dll
+E:\Khalifa\Sajath\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Services.dll
+E:\Khalifa\Sajath\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Services.pdb
+E:\Khalifa\Sajath\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Repositories.pdb
+E:\Khalifa\Sajath\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.csprojAssemblyReference.cache
+E:\Khalifa\Sajath\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.RazorAssemblyInfo.cache
+E:\Khalifa\Sajath\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.RazorAssemblyInfo.cs
+E:\Khalifa\Sajath\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.AssemblyInfoInputs.cache
+E:\Khalifa\Sajath\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.AssemblyInfo.cs
+E:\Khalifa\Sajath\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.RazorTargetAssemblyInfo.cache
+E:\Khalifa\Sajath\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.csproj.CopyComplete
+E:\Khalifa\Sajath\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.dll
+E:\Khalifa\Sajath\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.pdb
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\appsettings.json
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\libman.json
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.deps.json
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.runtimeconfig.json
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.runtimeconfig.dev.json
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.dll
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.pdb
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Repositories.dll
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Services.dll
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Services.pdb
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Repositories.pdb
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.csprojAssemblyReference.cache
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.AssemblyInfoInputs.cache
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.AssemblyInfo.cs
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.csproj.CoreCompileInputs.cache
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.RazorAssemblyInfo.cache
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.RazorAssemblyInfo.cs
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.RazorTargetAssemblyInfo.cache
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.csproj.CopyComplete
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.dll
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.pdb
+C:\TCIT\Khalifa University\Khalifa\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.genruntimeconfig.cache
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\libman.json
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\appsettings.json
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\Properties\ServiceDependencies\KUWebAPI - Web Deploy\profile.arm.json
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.deps.json
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.runtimeconfig.json
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.runtimeconfig.dev.json
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.dll
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.WebAPI.pdb
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Repositories.dll
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Services.dll
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Services.pdb
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\bin\Debug\netcoreapp2.2\KU.Repositories.pdb
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.csprojAssemblyReference.cache
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.AssemblyInfoInputs.cache
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.AssemblyInfo.cs
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.csproj.CoreCompileInputs.cache
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.RazorAssemblyInfo.cache
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.RazorAssemblyInfo.cs
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.RazorTargetAssemblyInfo.cache
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.csproj.CopyComplete
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.dll
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.pdb
+C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.WebAPI\obj\Debug\netcoreapp2.2\KU.WebAPI.genruntimeconfig.cache
