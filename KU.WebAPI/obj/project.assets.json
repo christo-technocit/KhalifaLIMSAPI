@@ -15025,11 +15025,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\TCIT\\Khalifa LIMS\\API\\KhalifaLIMSAPI\\KU.WebAPI\\KU.WebAPI.csproj",
+      "projectUniqueName": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.WebAPI\\KU.WebAPI.csproj",
       "projectName": "KU.WebAPI",
-      "projectPath": "C:\\TCIT\\Khalifa LIMS\\API\\KhalifaLIMSAPI\\KU.WebAPI\\KU.WebAPI.csproj",
+      "projectPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.WebAPI\\KU.WebAPI.csproj",
       "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
-      "outputPath": "C:\\TCIT\\Khalifa LIMS\\API\\KhalifaLIMSAPI\\KU.WebAPI\\obj\\",
+      "outputPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -15050,8 +15050,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\TCIT\\Khalifa LIMS\\API\\KhalifaLIMSAPI\\KU.Services\\KU.Services.csproj": {
-              "projectPath": "C:\\TCIT\\Khalifa LIMS\\API\\KhalifaLIMSAPI\\KU.Services\\KU.Services.csproj"
+            "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Services\\KU.Services.csproj": {
+              "projectPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Services\\KU.Services.csproj"
             }
           }
         }

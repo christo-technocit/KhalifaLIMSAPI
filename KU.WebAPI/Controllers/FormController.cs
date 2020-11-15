@@ -101,7 +101,7 @@ namespace KU.WebAPI.Controllers
             }
         }
 
-        [HttpGet("Questionnaire")]
+        [HttpGet("GetForms")]
         public IActionResult GetRecords([FromQuery]Int32 SavedformID, Int32 TemplateID, Int32 SectionID)
         {
 

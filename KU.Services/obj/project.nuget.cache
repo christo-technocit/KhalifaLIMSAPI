@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S51TmK+Tx7F7dPJOSgPpfGS6CobvvuGz13qZu7wJQyTbz5mrOzD2wd20Vkeh6yvAR+AhCzJZYcgws5eecnE1nQ==",
+  "dgSpecHash": "F64zifywPmjBIHDea1skxFQKh3W1/GL5gS2WFwu8Q3xrc6SLQ7HToPH7KjP48rgQHifdepFlcS5eEoZR629DDw==",
   "success": true,
-  "projectFilePath": "C:\\TCIT\\Khalifa LIMS\\API\\KhalifaLIMSAPI\\KU.Services\\KU.Services.csproj",
+  "projectFilePath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Services\\KU.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\augus\\.nuget\\packages\\aspnet.security.oauth.validation\\2.0.0\\aspnet.security.oauth.validation.2.0.0.nupkg.sha512",
     "C:\\Users\\augus\\.nuget\\packages\\aspnet.security.openidconnect.extensions\\2.0.0\\aspnet.security.openidconnect.extensions.2.0.0.nupkg.sha512",

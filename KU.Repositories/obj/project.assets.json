@@ -8855,11 +8855,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\TCIT\\Khalifa LIMS\\API\\KhalifaLIMSAPI\\KU.Repositories\\KU.Repositories.csproj",
+      "projectUniqueName": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Repositories\\KU.Repositories.csproj",
       "projectName": "KU.Repositories",
-      "projectPath": "C:\\TCIT\\Khalifa LIMS\\API\\KhalifaLIMSAPI\\KU.Repositories\\KU.Repositories.csproj",
+      "projectPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Repositories\\KU.Repositories.csproj",
       "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
-      "outputPath": "C:\\TCIT\\Khalifa LIMS\\API\\KhalifaLIMSAPI\\KU.Repositories\\obj\\",
+      "outputPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
