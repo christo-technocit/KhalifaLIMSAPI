@@ -45,3 +45,15 @@ C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.Services\obj\Debug\netcoreapp2.2\KU.S
 C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.Services\obj\Debug\netcoreapp2.2\KU.Services.csproj.CopyComplete
 C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.Services\obj\Debug\netcoreapp2.2\KU.Services.dll
 C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.Services\obj\Debug\netcoreapp2.2\KU.Services.pdb
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Services\bin\Debug\netcoreapp2.2\KU.Services.deps.json
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Services\bin\Debug\netcoreapp2.2\KU.Services.dll
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Services\bin\Debug\netcoreapp2.2\KU.Services.pdb
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Services\bin\Debug\netcoreapp2.2\KU.Repositories.dll
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Services\bin\Debug\netcoreapp2.2\KU.Repositories.pdb
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Services\obj\Debug\netcoreapp2.2\KU.Services.csprojAssemblyReference.cache
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Services\obj\Debug\netcoreapp2.2\KU.Services.AssemblyInfoInputs.cache
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Services\obj\Debug\netcoreapp2.2\KU.Services.AssemblyInfo.cs
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Services\obj\Debug\netcoreapp2.2\KU.Services.csproj.CoreCompileInputs.cache
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Services\obj\Debug\netcoreapp2.2\KU.Services.csproj.CopyComplete
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Services\obj\Debug\netcoreapp2.2\KU.Services.dll
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Services\obj\Debug\netcoreapp2.2\KU.Services.pdb

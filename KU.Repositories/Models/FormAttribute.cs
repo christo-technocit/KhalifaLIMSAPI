@@ -21,7 +21,7 @@ namespace KU.Repositories.Models
     {
         public long FormAttributeID { get; set; }
 
-        public long TemplateID { get; set; }
+        public long MenuID { get; set; }
 
         public long SectionID { get; set; }
 
@@ -30,9 +30,6 @@ namespace KU.Repositories.Models
 
         [StringLength(50)]
         public string AttributeDisplayName { get; set; }
-       // public string AttributeDisplayName_Arabic { get; set; }
-       // public string AttributeDisplayName_Hindi { get; set; }
-
         public bool selected { get;  set; }
     }
 }

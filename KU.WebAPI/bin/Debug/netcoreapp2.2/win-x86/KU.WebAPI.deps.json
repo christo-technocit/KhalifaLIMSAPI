@@ -25,19 +25,25 @@
       "KU.WebAPI/1.0.0": {
         "dependencies": {
           "AutoMapper": "7.0.1",
+          "EPPlus": "4.5.2.1",
           "FluentValidation.AspNetCore": "8.4.0",
           "KU.Services": "1.0.0",
           "MailKit": "2.2.0",
           "Microsoft.AspNetCore.App": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Cors": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.EntityFrameworkCore.InMemory": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0",
           "Microsoft.EntityFrameworkCore.Tools": "2.2.6",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.4",
+          "NLog.Extensions.Logging": "1.6.1",
           "OpenIddict": "2.0.0",
           "OpenIddict.EntityFrameworkCore": "2.0.0",
+          "Serilog.Extensions.Logging.File": "2.0.0",
           "Swashbuckle.AspNetCore": "4.0.1",
+          "Syncfusion.Xamarin.Compression": "17.4.0.50",
+          "Syncfusion.Xamarin.GridCommon": "17.4.0.50",
           "System.Linq.Dynamic.Core": "1.0.18"
         },
         "compile": {
@@ -96,6 +102,32 @@
         },
         "compile": {
           "lib/netstandard2.0/CryptoHelper.dll": {}
+        }
+      },
+      "DocumentFormat.OpenXml/2.10.1": {
+        "dependencies": {
+          "System.IO.Packaging": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/DocumentFormat.OpenXml.dll": {}
+        }
+      },
+      "EPPlus/4.5.2.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Json": "2.2.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Data.Common": "4.3.0",
+          "System.Drawing.Common": "4.5.0",
+          "System.Reflection": "4.3.0",
+          "System.Security.Claims": "4.3.0",
+          "System.Security.Cryptography.Pkcs": "4.5.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Text.Encoding.CodePages": "4.5.0",
+          "System.Xml.XPath.XmlDocument": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/EPPlus.dll": {}
         }
       },
       "FluentValidation/8.4.0": {
@@ -2208,6 +2240,11 @@
           "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {}
         }
       },
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0"
+        }
+      },
       "MimeKit/2.2.0": {
         "dependencies": {
           "Portable.BouncyCastle": "1.8.5",
@@ -2237,6 +2274,20 @@
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "NLog/4.6.7": {
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
+      "NLog.Extensions.Logging/1.6.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.2.0",
+          "NLog": "4.6.7"
+        },
+        "compile": {
+          "lib/netstandard2.0/NLog.Extensions.Logging.dll": {}
         }
       },
       "NuGet.Frameworks/4.7.0": {
@@ -2429,6 +2480,91 @@
         }
       },
       "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {},
+      "Serilog/2.5.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Collections": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Serilog.dll": {}
+        }
+      },
+      "Serilog.Extensions.Logging/2.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.2.0",
+          "Serilog": "2.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {}
+        }
+      },
+      "Serilog.Extensions.Logging.File/2.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Configuration.Binder": "2.2.0",
+          "Serilog": "2.5.0",
+          "Serilog.Extensions.Logging": "2.0.2",
+          "Serilog.Formatting.Compact": "1.0.0",
+          "Serilog.Sinks.Async": "1.1.0",
+          "Serilog.Sinks.RollingFile": "3.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Extensions.Logging.File.dll": {}
+        }
+      },
+      "Serilog.Formatting.Compact/1.0.0": {
+        "dependencies": {
+          "Serilog": "2.5.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/Serilog.Formatting.Compact.dll": {}
+        }
+      },
+      "Serilog.Sinks.Async/1.1.0": {
+        "dependencies": {
+          "Serilog": "2.5.0",
+          "System.Collections.Concurrent": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/Serilog.Sinks.Async.dll": {}
+        }
+      },
+      "Serilog.Sinks.File/3.2.0": {
+        "dependencies": {
+          "Serilog": "2.5.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Timer": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Serilog.Sinks.File.dll": {}
+        }
+      },
+      "Serilog.Sinks.RollingFile/3.3.0": {
+        "dependencies": {
+          "Serilog.Sinks.File": "3.2.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Serilog.Sinks.RollingFile.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/4.0.1": {
         "dependencies": {
           "Swashbuckle.AspNetCore.Swagger": "4.0.1",
@@ -2468,6 +2604,16 @@
         },
         "compile": {
           "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Compression/17.4.0.50": {
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.Compression.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.GridCommon/17.4.0.50": {
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -2519,7 +2665,38 @@
           "System.Threading": "4.3.0"
         }
       },
+      "System.ComponentModel/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
       "System.ComponentModel.Annotations/4.5.0": {},
+      "System.ComponentModel.Primitives/4.3.0": {
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.ComponentModel.TypeConverter/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel": "4.3.0",
+          "System.ComponentModel.Primitives": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0"
+        }
+      },
       "System.Composition/1.0.31": {
         "dependencies": {
           "System.Composition.AttributedModel": "1.0.31",
@@ -2693,6 +2870,15 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Drawing.Common/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Dynamic.Runtime/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -2794,6 +2980,11 @@
       "System.IO.FileSystem.Primitives/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.IO.Packaging/4.7.0": {
+        "compile": {
+          "ref/netstandard2.0/System.IO.Packaging.dll": {}
         }
       },
       "System.IO.Pipelines/4.5.2": {
@@ -3225,6 +3416,9 @@
       "System.Security.Cryptography.Pkcs/4.5.0": {
         "dependencies": {
           "System.Security.Cryptography.Cng": "4.5.0"
+        },
+        "compile": {
+          "ref/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll": {}
         }
       },
       "System.Security.Cryptography.Primitives/4.3.0": {
@@ -3373,6 +3567,13 @@
           "System.Runtime.Handles": "4.3.0"
         }
       },
+      "System.Threading.Timer/4.0.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "Microsoft.NETCore.Targets": "2.0.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
       "System.ValueTuple/4.5.0": {},
       "System.Xml.ReaderWriter/4.3.0": {
         "dependencies": {
@@ -3470,8 +3671,26 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
+      "System.Xml.XPath.XmlDocument/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0",
+          "System.Xml.XPath": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
+        }
+      },
       "KU.Repositories/1.0.0": {
         "dependencies": {
+          "DocumentFormat.OpenXml": "2.10.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
           "Microsoft.Extensions.Identity.Stores": "2.2.0",
           "OpenIddict": "2.0.0",
@@ -3497,19 +3716,25 @@
       "KU.WebAPI/1.0.0": {
         "dependencies": {
           "AutoMapper": "7.0.1",
+          "EPPlus": "4.5.2.1",
           "FluentValidation.AspNetCore": "8.4.0",
           "KU.Services": "1.0.0",
           "MailKit": "2.2.0",
           "Microsoft.AspNetCore.App": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Cors": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.EntityFrameworkCore.InMemory": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0",
           "Microsoft.EntityFrameworkCore.Tools": "2.2.6",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.4",
+          "NLog.Extensions.Logging": "1.6.1",
           "OpenIddict": "2.0.0",
           "OpenIddict.EntityFrameworkCore": "2.0.0",
+          "Serilog.Extensions.Logging.File": "2.0.0",
           "Swashbuckle.AspNetCore": "4.0.1",
+          "Syncfusion.Xamarin.Compression": "17.4.0.50",
+          "Syncfusion.Xamarin.GridCommon": "17.4.0.50",
           "System.Linq.Dynamic.Core": "1.0.18"
         },
         "runtime": {
@@ -3585,6 +3810,38 @@
           "lib/netstandard2.0/CryptoHelper.dll": {
             "assemblyVersion": "3.0.2.0",
             "fileVersion": "3.0.2.0"
+          }
+        }
+      },
+      "DocumentFormat.OpenXml/2.10.1": {
+        "dependencies": {
+          "System.IO.Packaging": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DocumentFormat.OpenXml.dll": {
+            "assemblyVersion": "2.10.1.0",
+            "fileVersion": "2.10.1.0"
+          }
+        }
+      },
+      "EPPlus/4.5.2.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Json": "2.2.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Data.Common": "4.3.0",
+          "System.Drawing.Common": "4.5.0",
+          "System.Reflection": "4.3.0",
+          "System.Security.Claims": "4.3.0",
+          "System.Security.Cryptography.Pkcs": "4.5.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Text.Encoding.CodePages": "4.5.0",
+          "System.Xml.XPath.XmlDocument": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/EPPlus.dll": {
+            "assemblyVersion": "4.5.2.1",
+            "fileVersion": "4.5.2.1"
           }
         }
       },
@@ -3827,6 +4084,17 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0"
+        },
+        "runtime": {
+          "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
       "MimeKit/2.2.0": {
         "dependencies": {
           "Portable.BouncyCastle": "1.8.5",
@@ -3839,6 +4107,26 @@
           "lib/netstandard2.0/MimeKit.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "NLog/4.6.7": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.7.10445"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/1.6.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.2.0",
+          "NLog": "4.6.7"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.6.1.1203"
           }
         }
       },
@@ -4019,6 +4307,112 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
+      "Serilog/2.5.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Collections": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Serilog.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.5.0.0"
+          }
+        }
+      },
+      "Serilog.Extensions.Logging/2.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.2.0",
+          "Serilog": "2.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.2.0"
+          }
+        }
+      },
+      "Serilog.Extensions.Logging.File/2.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Configuration.Binder": "2.2.0",
+          "Serilog": "2.5.0",
+          "Serilog.Extensions.Logging": "2.0.2",
+          "Serilog.Formatting.Compact": "1.0.0",
+          "Serilog.Sinks.Async": "1.1.0",
+          "Serilog.Sinks.RollingFile": "3.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Extensions.Logging.File.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Serilog.Formatting.Compact/1.0.0": {
+        "dependencies": {
+          "Serilog": "2.5.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Serilog.Formatting.Compact.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Serilog.Sinks.Async/1.1.0": {
+        "dependencies": {
+          "Serilog": "2.5.0",
+          "System.Collections.Concurrent": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Serilog.Sinks.Async.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "Serilog.Sinks.File/3.2.0": {
+        "dependencies": {
+          "Serilog": "2.5.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Timer": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Serilog.Sinks.File.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "Serilog.Sinks.RollingFile/3.3.0": {
+        "dependencies": {
+          "Serilog.Sinks.File": "3.2.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Serilog.Sinks.RollingFile.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "3.3.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/4.0.1": {
         "dependencies": {
           "Swashbuckle.AspNetCore.Swagger": "4.0.1",
@@ -4072,7 +4466,54 @@
           }
         }
       },
+      "Syncfusion.Xamarin.Compression/17.4.0.50": {
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Compression.Portable.dll": {
+            "assemblyVersion": "17.4451.0.50",
+            "fileVersion": "17.4451.0.50"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.GridCommon/17.4.0.50": {
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll": {
+            "assemblyVersion": "17.4451.0.50",
+            "fileVersion": "17.4451.0.50"
+          }
+        }
+      },
       "System.Collections.Immutable/1.5.0": {},
+      "System.ComponentModel/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.ComponentModel.Primitives/4.3.0": {
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.ComponentModel.TypeConverter/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel": "4.3.0",
+          "System.ComponentModel.Primitives": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0"
+        }
+      },
       "System.Composition/1.0.31": {
         "dependencies": {
           "System.Composition.AttributedModel": "1.0.31",
@@ -4193,11 +4634,31 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "System.Drawing.Common/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        },
+        "runtime": {
+          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
       "System.Interactive.Async/3.2.0": {
         "runtime": {
           "lib/netstandard2.0/System.Interactive.Async.dll": {
             "assemblyVersion": "3.2.0.0",
             "fileVersion": "3.2.0.702"
+          }
+        }
+      },
+      "System.IO.Packaging/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.IO.Packaging.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
           }
         }
       },
@@ -4291,9 +4752,37 @@
           "System.Runtime.Handles": "4.3.0"
         }
       },
+      "System.Threading.Timer/4.0.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "Microsoft.NETCore.Targets": "2.0.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
       "System.ValueTuple/4.5.0": {},
+      "System.Xml.XPath.XmlDocument/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0",
+          "System.Xml.XPath": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.6.24705.1"
+          }
+        }
+      },
       "KU.Repositories/1.0.0": {
         "dependencies": {
+          "DocumentFormat.OpenXml": "2.10.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
           "Microsoft.Extensions.Identity.Stores": "2.2.0",
           "OpenIddict": "2.0.0",
@@ -4363,6 +4852,20 @@
       "sha512": "sha512-6xFZdEnhuOmX58TgZAeb20MbddsL8/nR/4CnWhmjMXv9gfpOxD+1bBU7IDtYq2Q8rZJUT6xYWdhW16bKriU2Mw==",
       "path": "cryptohelper/3.0.2",
       "hashPath": "cryptohelper.3.0.2.nupkg.sha512"
+    },
+    "DocumentFormat.OpenXml/2.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OJqoZ/qTgegiKQG0JANqXJWXOpyNj6cE1SyGqRyeT8B9OmUayT76YfwDzZfzgUczj9kaPhUrtgkuz5sCUqIxBg==",
+      "path": "documentformat.openxml/2.10.1",
+      "hashPath": "documentformat.openxml.2.10.1.nupkg.sha512"
+    },
+    "EPPlus/4.5.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/OzYn/n982Ozu+ARWISjn9REIb3PA5KN8qPfp3JKOoSnBezN3loGCQ2k0nLNL5K8+b+3boinsNiRbm5ovEfeog==",
+      "path": "epplus/4.5.2.1",
+      "hashPath": "epplus.4.5.2.1.nupkg.sha512"
     },
     "FluentValidation/8.4.0": {
       "type": "package",
@@ -4511,12 +5014,33 @@
       "path": "microsoft.win32.primitives/4.3.0",
       "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
     },
+    "Microsoft.Win32.SystemEvents/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LuI1oG+24TUj1ZRQQjM5Ew73BKnZE5NZ/7eAdh1o8ST5dPhUnJvIkiIn2re3MwnkRy6ELRnvEbBxHP8uALKhJw==",
+      "path": "microsoft.win32.systemevents/4.5.0",
+      "hashPath": "microsoft.win32.systemevents.4.5.0.nupkg.sha512"
+    },
     "MimeKit/2.2.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-S7X9/8vlLHcDpvIJvqUxgM+dCkLuClTeGBUtargPLGqhNPk4F8VdWH1xzOTXD1OVYwB/HaJYy3Gg1jP20Ordcw==",
       "path": "mimekit/2.2.0",
       "hashPath": "mimekit.2.2.0.nupkg.sha512"
+    },
+    "NLog/4.6.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xSIzXrIF89Ww6yoJPvyBcu4JLgNiDiEaTT4GyVltZEeVIvkgSm9J/srUy1Yz0EXwbTv502l8knoCFrgNc/MUMA==",
+      "path": "nlog/4.6.7",
+      "hashPath": "nlog.4.6.7.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/1.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Fm5tqHYUpGMe/SbgmH/+Kl/WHFL6BTAZVWy/5yycatmFAuqf22FBD4Nkohe8PZ8jUKPYRcUu17BB+0Tku/QK6w==",
+      "path": "nlog.extensions.logging/1.6.1",
+      "hashPath": "nlog.extensions.logging.1.6.1.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",
@@ -4679,6 +5203,55 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
     },
+    "Serilog/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JwwkgNYNFKT4kQZ3qBV3VqPgchUg1A6FnlFa9hgyanylwBhJ7eTFl3pgLVxijFEb+oHLImRcMaTsMzBt2AG0aQ==",
+      "path": "serilog/2.5.0",
+      "hashPath": "serilog.2.5.0.nupkg.sha512"
+    },
+    "Serilog.Extensions.Logging/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PYAkzUn/VV16Es7U06BfEhNZEltnYWu0WFCM4d2lLY/dvlA7xMwFXBuGRxR0XvEBPoOxPorjhFLy9txwiMO6rg==",
+      "path": "serilog.extensions.logging/2.0.2",
+      "hashPath": "serilog.extensions.logging.2.0.2.nupkg.sha512"
+    },
+    "Serilog.Extensions.Logging.File/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-usO0qr4v9VCMBWiTJ1nQmAbPNCt40FrkDol6CpfCXbsxGZS/hH+YCueF7vvPQ32ATI0GWcMWiKRdjXEE7/HxTQ==",
+      "path": "serilog.extensions.logging.file/2.0.0",
+      "hashPath": "serilog.extensions.logging.file.2.0.0.nupkg.sha512"
+    },
+    "Serilog.Formatting.Compact/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-r3QYz02y7+B7Ng30hyJM929OJhem7SsJ4XDUE0Zfptj2MRiQfpPUb5f58juAFjp/TnNeSX2QNzZEnHwLeoJfHQ==",
+      "path": "serilog.formatting.compact/1.0.0",
+      "hashPath": "serilog.formatting.compact.1.0.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.Async/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xll0Kanz2BkCxuv+F3p1WXr47jdsVM0GU1n1LZvK+18QiRZ/WGFNxSNw9EMKFV5ED5gr7MUpAe6PCMNL1HGUMA==",
+      "path": "serilog.sinks.async/1.1.0",
+      "hashPath": "serilog.sinks.async.1.1.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.File/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VHbo68pMg5hwSWrzLEdZv5b/rYmIgHIRhd4d5rl8GnC5/a8Fr+RShT5kWyeJOXax1el6mNJ+dmHDOVgnNUQxaw==",
+      "path": "serilog.sinks.file/3.2.0",
+      "hashPath": "serilog.sinks.file.3.2.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.RollingFile/3.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2lT5X1r3GH4P0bRWJfhA7etGl8Q2Ipw9AACvtAHWRUSpYZ42NGVyHoVs2ALBZ/cAkkS+tA4jl80Zie144eLQPg==",
+      "path": "serilog.sinks.rollingfile/3.3.0",
+      "hashPath": "serilog.sinks.rollingfile.3.3.0.nupkg.sha512"
+    },
     "Swashbuckle.AspNetCore/4.0.1": {
       "type": "package",
       "serviceable": true,
@@ -4707,12 +5280,47 @@
       "path": "swashbuckle.aspnetcore.swaggerui/4.0.1",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.4.0.1.nupkg.sha512"
     },
+    "Syncfusion.Xamarin.Compression/17.4.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2RXYPeQuLt7NaffTtDfysrY69HF1Hpqh+SKQj1xAdeeB8eql2rGBoLuqsTHx9IcT2e3WA6vo/Ak7pKMeVw1hNQ==",
+      "path": "syncfusion.xamarin.compression/17.4.0.50",
+      "hashPath": "syncfusion.xamarin.compression.17.4.0.50.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.GridCommon/17.4.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wiTpEI+d4sfzsoQw4gsetc0nfnv4KqJXUJtXrhs4PUHznA2Xv7swnHtJznjAhOr9GTosMx/5YV6gLIX+C9Arqw==",
+      "path": "syncfusion.xamarin.gridcommon/17.4.0.50",
+      "hashPath": "syncfusion.xamarin.gridcommon.17.4.0.50.nupkg.sha512"
+    },
     "System.Collections.Immutable/1.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-EXKiDFsChZW0RjrZ4FYHu9aW6+P4MCgEDCklsVseRfhoO0F+dXeMSsMRAlVXIo06kGJ/zv+2w1a2uc2+kxxSaQ==",
       "path": "system.collections.immutable/1.5.0",
       "hashPath": "system.collections.immutable.1.5.0.nupkg.sha512"
+    },
+    "System.ComponentModel/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "path": "system.componentmodel/4.3.0",
+      "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "path": "system.componentmodel.primitives/4.3.0",
+      "hashPath": "system.componentmodel.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.TypeConverter/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
+      "path": "system.componentmodel.typeconverter/4.3.0",
+      "hashPath": "system.componentmodel.typeconverter.4.3.0.nupkg.sha512"
     },
     "System.Composition/1.0.31": {
       "type": "package",
@@ -4763,12 +5371,26 @@
       "path": "system.data.common/4.3.0",
       "hashPath": "system.data.common.4.3.0.nupkg.sha512"
     },
+    "System.Drawing.Common/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AiJFxxVPdeITstiRS5aAu8+8Dpf5NawTMoapZ53Gfirml24p7HIfhjmCRxdXnmmf3IUA3AX3CcW7G73CjWxW/Q==",
+      "path": "system.drawing.common/4.5.0",
+      "hashPath": "system.drawing.common.4.5.0.nupkg.sha512"
+    },
     "System.Interactive.Async/3.2.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-C07p0dAA5lGqYUPiPCK3paR709gqS4aMDDsje0v0pvffwzLaxmsn5YQTfZbyNG5qrudPx+BCxTqISnncQ3wIoQ==",
       "path": "system.interactive.async/3.2.0",
       "hashPath": "system.interactive.async.3.2.0.nupkg.sha512"
+    },
+    "System.IO.Packaging/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9VV4KAbgRQZ79iEoG40KIeZy38O30oWwewScAST879+oki8g/Wa2HXZQgrhDDxQM4GkP1PnRJll05NMiVPbYAw==",
+      "path": "system.io.packaging/4.7.0",
+      "hashPath": "system.io.packaging.4.7.0.nupkg.sha512"
     },
     "System.Linq.Dynamic.Core/1.0.18": {
       "type": "package",
@@ -4812,12 +5434,26 @@
       "path": "system.threading.threadpool/4.3.0",
       "hashPath": "system.threading.threadpool.4.3.0.nupkg.sha512"
     },
+    "System.Threading.Timer/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-saGfUV8uqVW6LeURiqxcGhZ24PzuRNaUBtbhVeuUAvky1naH395A/1nY0P2bWvrw/BreRtIB/EzTDkGBpqCwEw==",
+      "path": "system.threading.timer/4.0.1",
+      "hashPath": "system.threading.timer.4.0.1.nupkg.sha512"
+    },
     "System.ValueTuple/4.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
       "path": "system.valuetuple/4.5.0",
       "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
+    },
+    "System.Xml.XPath.XmlDocument/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
+      "path": "system.xml.xpath.xmldocument/4.3.0",
+      "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
     "KU.Repositories/1.0.0": {
       "type": "project",

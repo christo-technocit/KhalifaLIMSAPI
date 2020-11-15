@@ -31,3 +31,11 @@ C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.Repositories\obj\Debug\netcoreapp2.2\
 C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.Repositories\obj\Debug\netcoreapp2.2\KU.Repositories.csproj.CoreCompileInputs.cache
 C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.Repositories\obj\Debug\netcoreapp2.2\KU.Repositories.dll
 C:\TCIT\Khalifa LIMS\API\KhalifaLIMSAPI\KU.Repositories\obj\Debug\netcoreapp2.2\KU.Repositories.pdb
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Repositories\bin\Debug\netcoreapp2.2\KU.Repositories.deps.json
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Repositories\bin\Debug\netcoreapp2.2\KU.Repositories.dll
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Repositories\bin\Debug\netcoreapp2.2\KU.Repositories.pdb
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Repositories\obj\Debug\netcoreapp2.2\KU.Repositories.AssemblyInfoInputs.cache
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Repositories\obj\Debug\netcoreapp2.2\KU.Repositories.AssemblyInfo.cs
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Repositories\obj\Debug\netcoreapp2.2\KU.Repositories.csproj.CoreCompileInputs.cache
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Repositories\obj\Debug\netcoreapp2.2\KU.Repositories.dll
+C:\TCIT\Khalifa LIMS\GIT\API\KhalifaLIMSAPI\KU.Repositories\obj\Debug\netcoreapp2.2\KU.Repositories.pdb

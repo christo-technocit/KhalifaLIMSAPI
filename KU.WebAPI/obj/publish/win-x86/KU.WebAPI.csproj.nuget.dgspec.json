@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\TCIT\\Khalifa University\\Khalifa\\KU.WebAPI\\KU.WebAPI.csproj": {}
+    "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.WebAPI\\KU.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\TCIT\\Khalifa University\\Khalifa\\KU.Repositories\\KU.Repositories.csproj": {
+    "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Repositories\\KU.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TCIT\\Khalifa University\\Khalifa\\KU.Repositories\\KU.Repositories.csproj",
+        "projectUniqueName": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Repositories\\KU.Repositories.csproj",
         "projectName": "KU.Repositories",
-        "projectPath": "C:\\TCIT\\Khalifa University\\Khalifa\\KU.Repositories\\KU.Repositories.csproj",
+        "projectPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Repositories\\KU.Repositories.csproj",
         "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
-        "outputPath": "C:\\TCIT\\Khalifa University\\Khalifa\\KU.Repositories\\obj\\",
+        "outputPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,9 +43,19 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.10.1, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.6, )"
             },
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
@@ -80,7 +90,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -89,14 +99,14 @@
         }
       }
     },
-    "C:\\TCIT\\Khalifa University\\Khalifa\\KU.Services\\KU.Services.csproj": {
+    "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Services\\KU.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TCIT\\Khalifa University\\Khalifa\\KU.Services\\KU.Services.csproj",
+        "projectUniqueName": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Services\\KU.Services.csproj",
         "projectName": "KU.Services",
-        "projectPath": "C:\\TCIT\\Khalifa University\\Khalifa\\KU.Services\\KU.Services.csproj",
+        "projectPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Services\\KU.Services.csproj",
         "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
-        "outputPath": "C:\\TCIT\\Khalifa University\\Khalifa\\KU.Services\\obj\\",
+        "outputPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -117,8 +127,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\TCIT\\Khalifa University\\Khalifa\\KU.Repositories\\KU.Repositories.csproj": {
-                "projectPath": "C:\\TCIT\\Khalifa University\\Khalifa\\KU.Repositories\\KU.Repositories.csproj"
+              "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Repositories\\KU.Repositories.csproj": {
+                "projectPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Repositories\\KU.Repositories.csproj"
               }
             }
           }
@@ -157,7 +167,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -166,14 +176,14 @@
         }
       }
     },
-    "C:\\TCIT\\Khalifa University\\Khalifa\\KU.WebAPI\\KU.WebAPI.csproj": {
+    "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.WebAPI\\KU.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TCIT\\Khalifa University\\Khalifa\\KU.WebAPI\\KU.WebAPI.csproj",
+        "projectUniqueName": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.WebAPI\\KU.WebAPI.csproj",
         "projectName": "KU.WebAPI",
-        "projectPath": "C:\\TCIT\\Khalifa University\\Khalifa\\KU.WebAPI\\KU.WebAPI.csproj",
+        "projectPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.WebAPI\\KU.WebAPI.csproj",
         "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
-        "outputPath": "C:\\TCIT\\Khalifa University\\Khalifa\\KU.WebAPI\\obj\\publish\\win-x86\\",
+        "outputPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.WebAPI\\obj\\publish\\win-x86\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -194,8 +204,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\TCIT\\Khalifa University\\Khalifa\\KU.Services\\KU.Services.csproj": {
-                "projectPath": "C:\\TCIT\\Khalifa University\\Khalifa\\KU.Services\\KU.Services.csproj"
+              "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Services\\KU.Services.csproj": {
+                "projectPath": "C:\\TCIT\\Khalifa LIMS\\GIT\\API\\KhalifaLIMSAPI\\KU.Services\\KU.Services.csproj"
               }
             }
           }
@@ -213,6 +223,10 @@
               "target": "Package",
               "version": "[7.0.1, )"
             },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[4.5.2.1, )"
+            },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[8.4.0, )"
@@ -226,6 +240,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Mvc.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
@@ -256,6 +274,10 @@
               "target": "Package",
               "version": "[2.2.4, )"
             },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
             "OpenIddict": {
               "target": "Package",
               "version": "[2.0.0, )"
@@ -264,9 +286,21 @@
               "target": "Package",
               "version": "[2.0.0, )"
             },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[4.0.1, )"
+            },
+            "Syncfusion.Xamarin.Compression": {
+              "target": "Package",
+              "version": "[17.4.0.50, )"
+            },
+            "Syncfusion.Xamarin.GridCommon": {
+              "target": "Package",
+              "version": "[17.4.0.50, )"
             },
             "System.Linq.Dynamic.Core": {
               "target": "Package",
@@ -283,7 +317,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

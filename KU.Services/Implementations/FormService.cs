@@ -99,9 +99,9 @@ namespace KU.Services.Implementations
         //    return mapper.Map<IEnumerable<FormAttributeValue_files>>(all);
         //}
 
-        public IEnumerable<FormAttribute> GetAttributeName(Int32 TemplateID, Int32 savedFormID)
+        public IEnumerable<FormAttribute> GetAttributeName(Int32 Menuid, Int32 savedFormID)
         {
-            var all = unitOfWork.FormAttributes.GetAttributeName(TemplateID, savedFormID);
+            var all = unitOfWork.FormAttributes.GetAttributeName(Menuid, savedFormID);
             return mapper.Map<IEnumerable<FormAttribute>>(all);
         }
         public IEnumerable<FormAttribute> GetAttributeID(string TemplateID, string SectionID, String AttributeName)
@@ -110,9 +110,9 @@ namespace KU.Services.Implementations
             return mapper.Map<IEnumerable<FormAttribute>>(all);
         }
 
-        public FormAttributeWrap GetAttributeIDReports(string TemplateID, string SectionID, String AttributeName)
+        public FormAttributeWrap GetAttributeIDReports(string Menuid, string SectionID, String AttributeName)
         {
-            var all = unitOfWork.FormAttributes.GetAttributeIDReports(TemplateID, SectionID, AttributeName);
+            var all = unitOfWork.FormAttributes.GetAttributeIDReports(Menuid, SectionID, AttributeName);
             return mapper.Map<FormAttributeWrap>(new FormAttributeWrap { result = all });
         }
 

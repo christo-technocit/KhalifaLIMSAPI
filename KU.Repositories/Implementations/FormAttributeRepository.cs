@@ -17,30 +17,30 @@ namespace KU.Repositories.Implementations
         public IEnumerable<FormAttribute> GetAllIncludedData()
         {
             return _appContext.FormAttribute
-                .OrderBy(c => c.TemplateID)
+                .OrderBy(c => c.MenuID)
             
                 .ToList();
         }
 
-        public IEnumerable<FormAttribute> GetAttributeName(Int32 TemplateID, Int32 FormAttributeID)
+        public IEnumerable<FormAttribute> GetAttributeName(Int32 Menuid, Int32 FormAttributeID)
         {
-            if (TemplateID == 0)
+            if (Menuid == 0)
             {
                 return _appContext.FormAttribute
-                             .OrderBy(c => c.TemplateID)
+                             .OrderBy(c => c.MenuID)
                              .ToList();
             }
             else
             {
                 return _appContext.FormAttribute
-             .Where(R => R.TemplateID == TemplateID)
-             .OrderBy(c => c.TemplateID)
+             .Where(R => R.MenuID == Menuid)
+             .OrderBy(c => c.MenuID)
 
              .ToList();
             }
         }
 
-        public IEnumerable<FormAttribute> GetAttributeID(string TemplateID, string SectionID, string AttributeName)
+        public IEnumerable<FormAttribute> GetAttributeID(string Menuid, string SectionID, string AttributeName)
         {
            
             if (  string.IsNullOrEmpty(SectionID)) 
@@ -49,28 +49,26 @@ namespace KU.Repositories.Implementations
             }
 
 
-            if ( string.IsNullOrEmpty(TemplateID))
+            if ( string.IsNullOrEmpty(Menuid))
             {
                return _appContext.FormAttribute.FromSql("sp_FormAttribute").ToList();
-               // return _appContext.FormAttribute.FromSql("sp_FormAttribute_Check").ToList();
 
             }
             else
             {
                   if (String.IsNullOrEmpty(AttributeName))  
                     {
-                    return _appContext.FormAttribute.FromSql("sp_FormAttribute {0},{1}", TemplateID,SectionID).ToList();
-                //    return _appContext.FormAttribute.FromSql("sp_FormAttribute_Check {0},{1}", TemplateID, SectionID).ToList();
+                    return _appContext.FormAttribute.FromSql("sp_FormAttribute {0},{1}", Menuid, SectionID).ToList();
                 }
                 else
                 {
-                    return _appContext.FormAttribute.FromSql("sp_FormAttribute {0},{1},{2}", TemplateID,SectionID, AttributeName).ToList();
+                    return _appContext.FormAttribute.FromSql("sp_FormAttribute {0},{1},{2}", Menuid, SectionID, AttributeName).ToList();
                 }
                 
             }
         }
 
-        public IEnumerable<FormAttribute> GetAttributeIDReports(string TemplateID, string SectionID, string AttributeName)
+        public IEnumerable<FormAttribute> GetAttributeIDReports(string Menuid, string SectionID, string AttributeName)
         {
 
             if (string.IsNullOrEmpty(SectionID))
@@ -79,7 +77,7 @@ namespace KU.Repositories.Implementations
             }
 
 
-            if (string.IsNullOrEmpty(TemplateID))
+            if (string.IsNullOrEmpty(Menuid))
             {
                List<FormAttribute> TR =  _appContext.FormAttribute.FromSql("sp_FormAttribute").ToList();
                 return TR;
@@ -88,12 +86,12 @@ namespace KU.Repositories.Implementations
             {
                 if (String.IsNullOrEmpty(AttributeName))
                 {
-                    List<FormAttribute>  TR =  _appContext.FormAttribute.FromSql("sp_FormAttribute {0},{1}", TemplateID, SectionID).ToList();
+                    List<FormAttribute>  TR =  _appContext.FormAttribute.FromSql("sp_FormAttribute {0},{1}", Menuid, SectionID).ToList();
                     return TR;
                 }
                 else
                 {
-                    List<FormAttribute> TR= _appContext.FormAttribute.FromSql("sp_FormAttribute {0},{1},{2}", TemplateID, SectionID, AttributeName).ToList();
+                    List<FormAttribute> TR= _appContext.FormAttribute.FromSql("sp_FormAttribute {0},{1},{2}", Menuid, SectionID, AttributeName).ToList();
                     return TR;
                 }
 

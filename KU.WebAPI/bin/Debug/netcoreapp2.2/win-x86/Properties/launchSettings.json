@@ -12,12 +12,11 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/form/listforms?templateID=1",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "ProgotiExchange.WebAPI": {
+    "TCIT.WebAPI": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",

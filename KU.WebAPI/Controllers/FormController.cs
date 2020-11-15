@@ -69,11 +69,11 @@ namespace KU.WebAPI.Controllers
 
 
         [HttpGet("formattribute")]
-        public IActionResult GetAttributeID([FromQuery]string TemplateID, string SectionID, string AttributeName)
+        public IActionResult GetAttributeID([FromQuery]string Menuid, string SectionID, string AttributeName)
         {
             try
             {
-                var all = formService.GetAttributeID(TemplateID, SectionID, AttributeName);
+                var all = formService.GetAttributeID(Menuid, SectionID, AttributeName);
                 return Ok(all);
             }
             catch (Exception ex)
@@ -85,11 +85,11 @@ namespace KU.WebAPI.Controllers
             }
         }
         [HttpGet("formattributeReports")]
-        public IActionResult GetAttributeIDReports([FromQuery]string TemplateID, string SectionID, string AttributeName)
+        public IActionResult GetAttributeIDReports([FromQuery]string Menuid, string SectionID, string AttributeName)
         {
             try
             {
-                var all = formService.GetAttributeIDReports(TemplateID, SectionID, AttributeName);
+                var all = formService.GetAttributeIDReports(Menuid, SectionID, AttributeName);
                 return Ok(all);
             }
             catch (Exception ex)
@@ -102,13 +102,13 @@ namespace KU.WebAPI.Controllers
         }
 
         [HttpGet("GetForms")]
-        public IActionResult GetRecords([FromQuery]Int32 SavedformID, Int32 TemplateID, Int32 SectionID)
+        public IActionResult GetRecords([FromQuery]Int32 SavedformID, Int32 Menuid, Int32 SectionID)
         {
 
             try
             {
 
-               var all = formService.GetRecords(TemplateID,SavedformID, SectionID);
+               var all = formService.GetRecords(Menuid, SavedformID, SectionID);
                 //return Ok(all);
                 string[] s = all.Select(p => p.Items).ToArray();
                 //string[] s = all.result.Select(p => p.Items).ToArray();
@@ -401,13 +401,13 @@ namespace KU.WebAPI.Controllers
 
         [HttpGet("totalrecords")]
         //[Authorize(Authorization.Policies.ViewAllUsersPolicy)]
-        public IActionResult GetTotal([FromQuery] Int32 TemplateID, Int32 PageSize, string SearchStr)
+        public IActionResult GetTotal([FromQuery] Int32 Menuid, Int32 PageSize, string SearchStr)
         {
             try
             {
                 var AuthID = Request.Headers["AuthID"];
                 var AuthPwd = Request.Headers["AuthPwd"];
-                var all = formService.GetTotal(TemplateID, PageSize, SearchStr);
+                var all = formService.GetTotal(Menuid, PageSize, SearchStr);
                 return Ok(all);
             }
             catch (Exception ex)
@@ -422,7 +422,7 @@ namespace KU.WebAPI.Controllers
  [HttpGet("totalrecordswithAuth")]
   
 
-        public IActionResult GetTotalAuth([FromQuery] Int32 TemplateID, Int32 PageSize, string SearchStr)
+        public IActionResult GetTotalAuth([FromQuery] Int32 Menuid, Int32 PageSize, string SearchStr)
         {
             try
             {
@@ -439,7 +439,7 @@ namespace KU.WebAPI.Controllers
                 // if (all.FirstOrDefault().UserId != 0)
                 {
 
-                    var totalrec = formService.GetTotal(TemplateID, PageSize, SearchStr);
+                    var totalrec = formService.GetTotal(Menuid, PageSize, SearchStr);
                     return Ok(totalrec);
                 }
                 else

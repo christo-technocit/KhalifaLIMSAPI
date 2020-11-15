@@ -31,9 +31,9 @@ namespace KU.Services.Interfaces
 
          // IEnumerable<SavedFormViewModel> GetFormByID(Int32 TemplateID, Int32 SavedFormID);
 
-        IEnumerable <FormAttribute> GetAttributeName(Int32 TemplateID, Int32 savedFormID);
-        IEnumerable<FormAttribute> GetAttributeID(string TemplateID, string SectionID, string AttributeName);
-        FormAttributeWrap GetAttributeIDReports(string TemplateID, string SectionID, string AttributeName);
+        IEnumerable <FormAttribute> GetAttributeName(Int32 Menuid, Int32 savedFormID);
+        IEnumerable<FormAttribute> GetAttributeID(string Menuid, string SectionID, string AttributeName);
+        FormAttributeWrap GetAttributeIDReports(string Menuid, string SectionID, string AttributeName);
 
 
 
