@@ -55,17 +55,23 @@ namespace KU.Services.Implementations
             return mapper.Map<IEnumerable<GenericResult>>(all);
         }
 
-        public IEnumerable<ApplicationUsers> GetAllIncludedDatas(Int32 OrderBy, Int32 SortOrder, Int32 PageSize, Int32 PageNumber, string Filter)
+        public IEnumerable<ApplicationUsersList> GetAllIncludedDatas(Int32 OrderBy, Int32 SortOrder, Int32 PageSize, Int32 PageNumber, string Filter)
         {
             var all = unitOfWork.ApplicationUsers.GetAllIncludedDatas(OrderBy, SortOrder, PageSize, PageNumber, Filter);
 
-            return mapper.Map<IEnumerable<ApplicationUsers>>(all);
+            return mapper.Map<IEnumerable<ApplicationUsersList>>(all);
         }
 
-        public IEnumerable<ApplicationUsers> CheckUserIDs(string UserName, string Password)
+        public IEnumerable<UserGroups> GetAllUserGroups(Int32 OrderBy, Int32 SortOrder, Int32 PageSize, Int32 PageNumber, string Filter)
+        {
+            var all = unitOfWork.ApplicationUsers.GetAllUserGroups(OrderBy, SortOrder, PageSize, PageNumber, Filter);
+
+            return mapper.Map<IEnumerable<UserGroups>>(all);
+        }
+        public IEnumerable<ApplicationUsersList> CheckUserIDs(string UserName, string Password)
         {
             var all = unitOfWork.ApplicationUsers.CheckUserIDs(UserName, Password);
-            return mapper.Map<IEnumerable<ApplicationUsers>>(all);
+            return mapper.Map<IEnumerable<ApplicationUsersList>>(all);
         }
 
 
@@ -76,27 +82,27 @@ namespace KU.Services.Implementations
         }
 
 
-        public string InsertUser(ApplicationUsersViewModel model)
+        public long InsertUser(ApplicationUsersViewModel model)
         {
             var entity = mapper.Map<ApplicationUsers>(model);
             unitOfWork.ApplicationUsers.Add(entity);
             unitOfWork.SaveChanges();
-            return entity.UserId;
+            return entity.UserID;
         }
-        public string UpdateUser(ApplicationUsersViewModel model)
+        public long UpdateUser(ApplicationUsersViewModel model)
         {
             var entity = mapper.Map<ApplicationUsers>(model);
             unitOfWork.ApplicationUsers.Update(entity);
             unitOfWork.SaveChanges();
-            return entity.UserId;
+            return entity.UserID;
         }
 
-        public string DeleteUser(ApplicationUsersViewModel model)
+        public long DeleteUser(ApplicationUsersViewModel model)
         {
             var entity = mapper.Map<ApplicationUsers>(model);
             unitOfWork.ApplicationUsers.Remove(entity);
             unitOfWork.SaveChanges();
-            return entity.UserId;
+            return entity.UserID;
         }
 
         // user module end

@@ -10,8 +10,8 @@ namespace KU.Repositories
     {
         IApplicationUserRepository ApplicationUser { get; }
         IApplicationUsersRepository ApplicationUsers { get; }
-
-
+        IApplicationUsersRepository ApplicationUsersList { get; }
+        IApplicationUsersRepository ApplicationUsersDelete { get; }
 
         // IAspNetUsersRepository AspNetUsers { get; }
 

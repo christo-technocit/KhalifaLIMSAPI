@@ -18,6 +18,9 @@ namespace KU.Repositories
         IApplicationUserRepository _ApplicationUser; 
 
         IApplicationUsersRepository _ApplicationUsers;
+        
+        IApplicationUsersRepository _ApplicationUsersDelete;
+        IApplicationUsersRepository _ApplicationUsersList;
 
         //IAspNetUsersRepository _AspNetUsers;
 
@@ -85,6 +88,26 @@ namespace KU.Repositories
             }
         }
 
+        public IApplicationUsersRepository ApplicationUsersDelete
+        {
+            get
+            {
+                if (_ApplicationUsersDelete == null)
+                    _ApplicationUsersDelete = new ApplicationUsersRepository(_context);
+
+                return _ApplicationUsersDelete;
+            }
+        }
+        public IApplicationUsersRepository ApplicationUsersList
+        {
+            get
+            {
+                if (_ApplicationUsersList == null)
+                    _ApplicationUsersList = new ApplicationUsersRepository(_context);
+
+                return _ApplicationUsersList;
+            }
+        }
         public ITotalRecordsRepository totalRecords
         {
             get
@@ -132,87 +155,6 @@ namespace KU.Repositories
             }
         }
 
-
-        //public IQuestionnaire1Repository questionnaire1
-        //{
-        //    get
-        //    {
-        //        if (_questionnaire1 == null)
-        //            _questionnaire1 = new Questionnaire1Repository(_context);
-
-        //        return _questionnaire1;
-        //    }
-        //}
-        //public IQuestionnaire2Repository questionnaire2
-        //{
-        //    get
-        //    {
-        //        if (_questionnaire2 == null)
-        //            _questionnaire2 = new Questionnaire2Repository(_context);
-
-        //        return _questionnaire2;
-        //    }
-        //}
-        //public IQuestionnaire3Repository questionnaire3 
-        //{
-        //    get
-        //    {
-        //        if (_questionnaire3  == null)
-        //            _questionnaire3 = new Questionnaire3Repository(_context);
-
-        //        return _questionnaire3;
-        //    }
-        //}
-        //public IQuestionnaire4Repository questionnaire4
-        //{
-        //    get
-        //    {
-        //        if (_questionnaire4 == null)
-        //            _questionnaire4 = new Questionnaire4Repository(_context);
-
-        //        return _questionnaire4;
-        //    }
-        //}
-        //public IQuestionnaire5Repository questionnaire5
-        //{
-        //    get
-        //    {
-        //        if (_questionnaire5 == null)
-        //            _questionnaire5 = new Questionnaire5Repository(_context);
-
-        //        return _questionnaire5;
-        //    }
-        //}
-        //public IQuestionnaire6Repository questionnaire6
-        //{
-        //    get
-        //    {
-        //        if (_questionnaire6 == null)
-        //            _questionnaire6 = new Questionnaire6Repository(_context);
-
-        //        return _questionnaire6;
-        //    }
-        //}
-        //public IQuestionnaire7Repository questionnaire7
-        //{
-        //    get
-        //    {
-        //        if (_questionnaire7 == null)
-        //            _questionnaire7 = new Questionnaire7Repository(_context);
-
-        //        return _questionnaire7;
-        //    }
-        //}
-        //public IQuestionnaire8Repository questionnaire8
-        //{
-        //    get
-        //    {
-        //        if (_questionnaire8 == null)
-        //            _questionnaire8 = new Questionnaire8Repository(_context);
-
-        //        return _questionnaire8;
-        //    }
-        //}
         public IFormAttributeRepository FormAttributes
         {
             get
