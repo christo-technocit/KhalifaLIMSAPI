@@ -12,9 +12,7 @@ namespace KU.Repositories
         IApplicationUsersRepository ApplicationUsers { get; }
         IApplicationUsersRepository ApplicationUsersList { get; }
         IApplicationUsersRepository ApplicationUsersDelete { get; }
-
-        // IAspNetUsersRepository AspNetUsers { get; }
-
+ 
         IFormAttributeRepository FormAttributes { get; }
         IFormAttributeValueRepository FormAttributeValues { get; }
 
@@ -27,24 +25,14 @@ namespace KU.Repositories
         ICountryMasterRepository CountryMaster { get; }
 		IQuestionnaireRepository questionnaire { get; }
 
-       // Common common { get; }
-
-        //      IQuestionnaire3Repository  questionnaire3 { get; }
-        //      IQuestionnaire1Repository questionnaire1 { get; }
-        //   IQuestionnaire2Repository questionnaire2 { get; }
-
-        //     // IQuestionnaire2sectionRepository questionnaire2section { get; }
-
-        //IQuestionnaire4Repository questionnaire4 { get; }
-        //      IQuestionnaire5Repository questionnaire5 { get; }
-        //      IQuestionnaire6Repository questionnaire6 { get; }
-        //      IQuestionnaire7Repository questionnaire7 { get; }
-        //      IQuestionnaire8Repository questionnaire8 { get; }
+       
 
         ITotalRecordsRepository totalRecords { get; }
         IGenericResultRepository GenericResult { get; }
 
         IFormAttributeValue_filesRepository FormAttributeValue_files { get; }
+
+        IViralLoadChartDataRepository ViralLoadChartData { get; }
 
         int SaveChanges();
     }

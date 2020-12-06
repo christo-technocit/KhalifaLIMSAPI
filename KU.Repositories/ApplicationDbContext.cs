@@ -27,6 +27,7 @@ namespace KU.Repositories
         public DbSet<ApplicationUsersDelete> ApplicationUsersDelete { get; set; }
         public DbSet<ApplicationUsersList> ApplicationUsersList { get; set; }
         public DbSet<UserGroups> UserGroups { get; set; }
+        public DbSet<ViralLoadChartData> ViralLoadChartData { get; set; }
         public DbSet<FormAttributeValue_files> formAttributeValue_Files { get; set; }
         public DbSet<Questionnaire> Questionnaire { get; set; }
         public DbSet<CountryMaster> CountryMaster { get; set; }
