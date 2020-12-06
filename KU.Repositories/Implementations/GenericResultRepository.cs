@@ -1,11 +1,13 @@
 ﻿using KU.Repositories.Interfaces;
 using KU.Repositories.Models;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace KU.Repositories.Implementations
 {
@@ -38,6 +40,13 @@ namespace KU.Repositories.Implementations
 
 
         //}
+        public IEnumerable<GenericResult> CheckDuplicate(Int32 MenuID, Int32 SavedFormID, string AttributeName, string AttributeValue)
+        {
+
+           return _appContext.GenericResult.FromSql("sp_CheckDuplicate {0},{1},{2},{3}", MenuID, SavedFormID, AttributeName, AttributeValue)
+                .ToList();
+      
+        }
 
         public IEnumerable<GenericResult> GetMenu(string UserName)
         {
@@ -60,15 +69,15 @@ namespace KU.Repositories.Implementations
 
 
         // For Get Records
-        public IEnumerable<GenericResult> GetRecords(Int32 TemplateID, Int32 SavedFormID,Int32 SectionID )
+        public IEnumerable<GenericResult> GetRecords(Int32 MenuID, Int32 SavedFormID,Int32 SectionID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
         {
             if (SavedFormID == 0)
             {
-                return _appContext.GenericResult.FromSql("sp_getrecordsNew {0},{1}", TemplateID, SectionID).ToList();
+                return _appContext.GenericResult.FromSql("sp_getrecordPage {0},{1},{2},{3},{4},{5},{6},{7}", MenuID, SectionID, 0,  orderby,  sortorder,  pagesize,  pagenumber,  filter).ToList();
             }
             else
             {
-                return _appContext.GenericResult.FromSql("sp_getrecordsNew {0},{1},{2}", TemplateID, SectionID, SavedFormID).ToList();
+                return _appContext.GenericResult.FromSql("sp_getrecordPage {0},{1},{2},{3},{4},{5},{6},{7}", MenuID, SectionID, SavedFormID,  orderby,  sortorder,  pagesize,  pagenumber,  filter).ToList();
             }
         }
 
@@ -99,6 +108,19 @@ namespace KU.Repositories.Implementations
             return TR;
 
         }
+
+  public IEnumerable<GenericResult> ImportSample(List<SampleForm> Model,string UserName)
+            
+        {
+   
+            string Result = JsonConvert.SerializeObject(Model);
+
+
+           // var all = _appContext.GenericResult.FromSql("Sp_importSample {0},{1}", Result, UserName);
+            return _appContext.GenericResult.FromSql("Sp_importSample {0},{1}", Result, UserName).ToList();
+
+        }
+
 
         //For Reports end
         private ApplicationDbContext _appContext => (ApplicationDbContext)_context;
