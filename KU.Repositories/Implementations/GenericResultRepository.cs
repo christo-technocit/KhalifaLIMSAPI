@@ -40,6 +40,13 @@ namespace KU.Repositories.Implementations
 
 
         //}
+        public IEnumerable<GenericResult> CheckDuplicate(Int32 MenuID, Int32 SavedFormID, string AttributeName, string AttributeValue)
+        {
+
+           return _appContext.GenericResult.FromSql("sp_CheckDuplicate {0},{1},{2},{3}", MenuID, SavedFormID, AttributeName, AttributeValue)
+                .ToList();
+      
+        }
 
         public IEnumerable<GenericResult> GetMenu(string UserName)
         {

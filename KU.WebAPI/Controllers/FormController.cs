@@ -30,6 +30,25 @@ namespace KU.WebAPI.Controllers
 
         }
 
+        [HttpGet("CheckDuplicate")]
+        public IActionResult CheckDuplicate([FromQuery] Int32 MenuID, Int32 SavedFormID, string AttributeName, string AttributeValue)
+
+        {
+            try
+            {
+                var all = formService.CheckDuplicate(MenuID, SavedFormID, AttributeName, AttributeValue);
+
+                return Ok(all);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError($"Something went wrong: {ex }");
+
+                return StatusCode(500, ex.InnerException);
+                // return StatusCode(500, "Internal server error" );
+
+            }
+        }
 
 
         [HttpGet("listforms")]

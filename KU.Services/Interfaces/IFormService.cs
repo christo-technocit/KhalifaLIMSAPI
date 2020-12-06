@@ -38,8 +38,8 @@ namespace KU.Services.Interfaces
 
 
         //to print with result head
-       // TotalRecordsWrap GetTotal(Int32 TemplateID, Int32 PageSize, String SearchStr);
-         IEnumerable<TotalRecords> GetTotal(Int32 TemplateID, Int32 PageSize, String SearchStr);
+        // TotalRecordsWrap GetTotal(Int32 TemplateID, Int32 PageSize, String SearchStr);
+        IEnumerable<TotalRecords> GetTotal(Int32 TemplateID, Int32 PageSize, String SearchStr);
 
         //TotalRecordsWrap GetReportTotal(long TemplateID, string SectionID, string AttributeName, string BeginPeriod, string EndPeriod, string CollectedBy, string CollectedPoint, string Nationality, string Gender, string Diabetes, string SampleID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter);
         IEnumerable<TotalRecords> GetReportTotal(long TemplateID, string SectionID, string AttributeName, string BeginPeriod, string EndPeriod, string CollectedBy, string CollectedPoint, string Nationality, string Gender, string Diabetes, string SampleID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter);
@@ -48,8 +48,8 @@ namespace KU.Services.Interfaces
 
         IEnumerable<GenericResult> ImportSample(List<SampleForm> Model, string UserName); 
         IEnumerable<GenericResult> GetRecords(Int32 MenuID, Int32 SavedFormID, Int32 SectionID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter);
-        GenericResultWrap GetReportCommon(long TemplateID, long SectionID, string AttributeName, string BeginPeriod, string EndPeriod, string CollectedBy, string CollectedPoint, string Nationality, string Gender, string Diabetes, string SampleID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter);
-
+        GenericResultWrap GetReportCommon(long MenuID, long SectionID, string AttributeName, string BeginPeriod, string EndPeriod, string CollectedBy, string CollectedPoint, string Nationality, string Gender, string Diabetes, string SampleID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter);
+        GenericResultWrap CheckDuplicate(Int32 MenuID, Int32 SavedFormID, string AttributeName, string AttributeValue);
 
         long InsertSavedForm(SavedFormViewModel model );
         long UpdateSavedForm(SavedFormViewModel model);

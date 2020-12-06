@@ -99,6 +99,8 @@ namespace KU.Services.Implementations
         //    return mapper.Map<IEnumerable<FormAttributeValue_files>>(all);
         //}
 
+
+
         public IEnumerable<FormAttribute> GetAttributeName(Int32 Menuid, Int32 savedFormID)
         {
             var all = unitOfWork.FormAttributes.GetAttributeName(Menuid, savedFormID);
@@ -134,12 +136,18 @@ namespace KU.Services.Implementations
 
 
         // Common procedure for reports
-        public GenericResultWrap GetReportCommon(long TemplateID, long SectionID, string AttributeName, string BeginPeriod, string EndPeriod, string CollectedBy, string CollectedPoint, string Nationality, string Gender, string Diabetes, string SampleID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
+        public GenericResultWrap GetReportCommon(long MenuID, long SectionID, string AttributeName, string BeginPeriod, string EndPeriod, string CollectedBy, string CollectedPoint, string Nationality, string Gender, string Diabetes, string SampleID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
         {
-            var all = unitOfWork.GenericResult.GetReportCommon(TemplateID, SectionID, AttributeName, BeginPeriod, EndPeriod, CollectedBy, CollectedPoint, Nationality, Gender, Diabetes, SampleID, orderby, sortorder, pagesize, pagenumber, filter);
+            var all = unitOfWork.GenericResult.GetReportCommon(MenuID, SectionID, AttributeName, BeginPeriod, EndPeriod, CollectedBy, CollectedPoint, Nationality, Gender, Diabetes, SampleID, orderby, sortorder, pagesize, pagenumber, filter);
             return mapper.Map<GenericResultWrap>(new GenericResultWrap { result = all });
         }
 
+
+        public GenericResultWrap CheckDuplicate(Int32 MenuID, Int32 SavedFormID, string AttributeName, string AttributeValue)
+        {
+            var all = unitOfWork.GenericResult.CheckDuplicate(MenuID, SavedFormID, AttributeName, AttributeValue);
+            return mapper.Map<GenericResultWrap>(new GenericResultWrap { result = all });
+        }
         //
 
 

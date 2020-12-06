@@ -20,5 +20,6 @@ namespace KU.Repositories.Interfaces
 
         IEnumerable<GenericResult> ImportSample(List<SampleForm> Model,string UserName);
 
+        IEnumerable<GenericResult> CheckDuplicate(Int32 MenuID, Int32 SavedFormID, string AttributeName, string AttributeValue);
     }
 }
