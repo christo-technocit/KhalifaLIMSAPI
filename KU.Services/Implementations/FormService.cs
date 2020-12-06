@@ -117,9 +117,9 @@ namespace KU.Services.Implementations
         }
 
 
-        public IEnumerable<GenericResult> GetRecords(Int32 TemplateID,Int32 SavedFormID, Int32 SectionID)
+        public IEnumerable<GenericResult> GetRecords(Int32 MenuID, Int32 SavedFormID, Int32 SectionID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
         {
-            var all = unitOfWork.GenericResult.GetRecords(TemplateID,SavedFormID, SectionID);
+            var all = unitOfWork.GenericResult.GetRecords(MenuID, SavedFormID, SectionID,  orderby,  sortorder,  pagesize,  pagenumber,  filter);
             return mapper.Map<IEnumerable<GenericResult>>(all);
         }
 
@@ -249,6 +249,11 @@ namespace KU.Services.Implementations
             return true;
         }
 
+        public IEnumerable<GenericResult> ImportSample(List<SampleForm> Model,string UserName)
+        {
+            var all = unitOfWork.GenericResult.ImportSample(Model,UserName);
 
+            return mapper.Map<IEnumerable<GenericResult>>(all);
+        }
     }
 }

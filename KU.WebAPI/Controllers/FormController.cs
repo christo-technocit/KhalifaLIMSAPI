@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Cors;
 using Newtonsoft.Json;
+using KU.Repositories.Models;
 
 namespace KU.WebAPI.Controllers
 {
@@ -102,13 +103,13 @@ namespace KU.WebAPI.Controllers
         }
 
         [HttpGet("GetForms")]
-        public IActionResult GetRecords([FromQuery]Int32 SavedformID, Int32 Menuid, Int32 SectionID)
+        public IActionResult GetRecords([FromQuery] Int32 Menuid, Int32 SavedformID,  Int32 SectionID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
         {
 
             try
             {
 
-               var all = formService.GetRecords(Menuid, SavedformID, SectionID);
+               var all = formService.GetRecords(Menuid, SavedformID, SectionID, orderby, sortorder, pagesize, pagenumber, filter);
                 //return Ok(all);
                 string[] s = all.Select(p => p.Items).ToArray();
                 //string[] s = all.result.Select(p => p.Items).ToArray();
@@ -399,6 +400,8 @@ namespace KU.WebAPI.Controllers
         }
 
 
+ 
+
         [HttpGet("totalrecords")]
         //[Authorize(Authorization.Policies.ViewAllUsersPolicy)]
         public IActionResult GetTotal([FromQuery] Int32 Menuid, Int32 PageSize, string SearchStr)
@@ -483,6 +486,23 @@ namespace KU.WebAPI.Controllers
         }
 
 
+        [HttpPost("ImportSample")]
+        //[HttpPost]
+        public async Task<IActionResult> ImportSample( List<SampleForm> Model,string UserName)
+
+        {
+             
+            var all = formService.ImportSample(Model,UserName);
+            //  string result = await formService.ImportSample(Model, UserName).ConfigureAwait(false);
+
+            //string[] s = all.Select(p => p.Items).ToArray();
+            //string jsonResponse = s[0];
+            //dynamic parsedJson = JsonConvert.DeserializeObject(jsonResponse);
+            ////return JsonConvert.SerializeObject(parsedJson, Formatting.Indented);
+
+            //return Ok(parsedJson);
+            return Ok(all);
+        }
 
 
 
