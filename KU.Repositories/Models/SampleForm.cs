@@ -12,6 +12,7 @@ namespace KU.Repositories.Models
         public string KUREFERENCE { get; set; }
         public string STATIONCODE { get; set; }
         public string INFLUENTFLOWRATE { get; set; }
-  
+        public string USERNAME { get; set; }
+        public string COMPANYNAME { get; set; }
     }
 }

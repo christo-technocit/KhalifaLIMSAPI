@@ -507,11 +507,11 @@ namespace KU.WebAPI.Controllers
 
         [HttpPost("ImportSample")]
         //[HttpPost]
-        public async Task<IActionResult> ImportSample( List<SampleForm> Model,string UserName)
+        public async Task<IActionResult> ImportSample( List<SampleForm> Model)
 
         {
              
-            var all = formService.ImportSample(Model,UserName);
+            var all = formService.ImportSample(Model,"");
             //  string result = await formService.ImportSample(Model, UserName).ConfigureAwait(false);
 
             //string[] s = all.Select(p => p.Items).ToArray();
