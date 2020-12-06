@@ -29,7 +29,17 @@ namespace KU.WebAPI.Controllers
             this.logger = logger;
         }
 
+        [HttpGet("GetAllUserGroups")]
+        //[Authorize(Authorization.Policies.ViewAllUsersPolicy)]
+        // [Authorize]
+        public IActionResult GetUserGroups(Int32 OrderBy, Int32 SortOrder, Int32 PageSize, Int32 PageNumber, string Filter)
+        {
 
+
+            //var all = UserService.GetAllIncludedData(OrderBy, SortOrder, PageSize, PageNumber, Filter);
+            var all = UserService.GetAllUserGroups(OrderBy, SortOrder, PageSize, PageNumber, Filter);
+            return Ok(all);
+        }
 
 
 
@@ -56,14 +66,26 @@ namespace KU.WebAPI.Controllers
 
         [HttpPost("AddUser")]
         //[Authorize(Authorization.Policies.ViewAllCustomersPolicy)]
+
+     
         public IActionResult AddUser(ApplicationUsersViewModel model)
         {
-            var id = UserService.InsertUser(model);
-            return Ok(id);
-        }
+            try
+            {
+                var id = UserService.InsertUser(model);
+                return Ok(id);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError($"Something went wrong: {ex }");
+                return StatusCode(500, ex.InnerException);
+                // return StatusCode(500, "Internal server error" );
+            }
+
+    }
 
 
-        [HttpPost("UpdateUser")]
+    [HttpPost("UpdateUser")]
         //[Authorize(Authorization.Policies.ViewAllCustomersPolicy)]
         public IActionResult UpdateUser(ApplicationUsersViewModel model)
         {

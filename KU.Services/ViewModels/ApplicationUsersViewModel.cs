@@ -7,15 +7,15 @@ namespace KU.Services.Interfaces
 {
     public class ApplicationUsersViewModel
     {
-        [Key]
-
-        public string UserId { get; set; }
+        
+       [Key]
+        public long UserID { get; set; }
 
         public string UserName { get; set; }
         public string Password { get; set; }
 
         public string FullName { get; set; }
-      
+        public long UserGroupID { get; set; }
         public string Email { get; set; }
 
         public string Occupation { get; set; }
@@ -33,9 +33,16 @@ namespace KU.Services.Interfaces
         public Int32 IsActive { get; set; }
         public string CreatedBy { get; set; }
         public string UpdatedBy { get; set; }
-        public DateTime? CreatedDate { get; set; }
-        public DateTime? UpdatedDate { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public DateTime UpdatedDate { get; set; }
 
-      }
+        public ApplicationUsersViewModel()
+        {
+            //this.CreatedBy = '0';
+            //this.UpdatedBy = 0;
+            this.CreatedDate = DateTime.Now;
+            this.UpdatedDate = DateTime.Now;
+        }
+    }
  
 }

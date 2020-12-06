@@ -457,7 +457,7 @@ namespace KU.WebAPI.Controllers
                 //var all = formService.GetUser(AuthID, AuthPwd);
                 var all = formService.CheckToken(AuthID);
 
-                if (all.FirstOrDefault().UserId == "")
+                if (all.FirstOrDefault().UserID == 0)
                 // if (all.FirstOrDefault().UserId != 0)
                 {
 
@@ -466,7 +466,7 @@ namespace KU.WebAPI.Controllers
                 }
                 else
                 {
-                    return Ok(all.FirstOrDefault().UserId);
+                    return Ok(all.FirstOrDefault().UserID);
 
                 }
             }

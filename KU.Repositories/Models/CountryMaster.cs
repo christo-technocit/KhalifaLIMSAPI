@@ -17,7 +17,7 @@ namespace KU.Repositories.Models
 
 
     }
-    public class CountryMaster
+    public class CountryMaster 
     {
         [Key]
         public long CountryID { get; set; }
