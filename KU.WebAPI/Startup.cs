@@ -199,6 +199,8 @@ namespace KU.WebAPI
             // Repositories
             services.AddScoped<IUnitOfWork, HttpUnitOfWork>();
 
+            services.AddScoped<IChartService, ChartService>();
+
 
         }
 

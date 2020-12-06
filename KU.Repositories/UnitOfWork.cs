@@ -21,7 +21,7 @@ namespace KU.Repositories
         
         IApplicationUsersRepository _ApplicationUsersDelete;
         IApplicationUsersRepository _ApplicationUsersList;
-
+        IViralLoadChartDataRepository _ViralLoadChartData;
         //IAspNetUsersRepository _AspNetUsers;
 
         ISectionRepository _sections;
@@ -106,6 +106,17 @@ namespace KU.Repositories
                     _ApplicationUsersList = new ApplicationUsersRepository(_context);
 
                 return _ApplicationUsersList;
+            }
+        }
+
+        public IViralLoadChartDataRepository ViralLoadChartData
+        {
+            get
+            {
+                if (_ViralLoadChartData == null)
+                    _ViralLoadChartData = new ViralLoadChartDataRepository(_context);
+
+                return _ViralLoadChartData;
             }
         }
         public ITotalRecordsRepository totalRecords
