@@ -122,13 +122,13 @@ namespace KU.WebAPI.Controllers
         }
 
         [HttpGet("GetForms")]
-        public IActionResult GetRecords([FromQuery] Int32 Menuid, Int32 SavedformID,  Int32 SectionID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
+        public IActionResult GetRecords([FromQuery] Int32 Menuid, Int32 SavedformID,  Int32 SectionID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter, string CompanyName, string FromDate,string ToDate)
         {
 
             try
             {
 
-               var all = formService.GetRecords(Menuid, SavedformID, SectionID, orderby, sortorder, pagesize, pagenumber, filter);
+               var all = formService.GetRecords(Menuid, SavedformID, SectionID, orderby, sortorder, pagesize, pagenumber, filter,  CompanyName,  FromDate,  ToDate);
                 //return Ok(all);
                 string[] s = all.Select(p => p.Items).ToArray();
                 //string[] s = all.result.Select(p => p.Items).ToArray();

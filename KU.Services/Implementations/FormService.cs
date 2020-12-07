@@ -119,9 +119,9 @@ namespace KU.Services.Implementations
         }
 
 
-        public IEnumerable<GenericResult> GetRecords(Int32 MenuID, Int32 SavedFormID, Int32 SectionID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
+        public IEnumerable<GenericResult> GetRecords(Int32 MenuID, Int32 SavedFormID, Int32 SectionID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter, string CompanyName, string FromDate, string ToDate)
         {
-            var all = unitOfWork.GenericResult.GetRecords(MenuID, SavedFormID, SectionID,  orderby,  sortorder,  pagesize,  pagenumber,  filter);
+            var all = unitOfWork.GenericResult.GetRecords(MenuID, SavedFormID, SectionID,  orderby,  sortorder,  pagesize,  pagenumber,  filter,  CompanyName,  FromDate,  ToDate);
             return mapper.Map<IEnumerable<GenericResult>>(all);
         }
 

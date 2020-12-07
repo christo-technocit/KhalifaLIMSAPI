@@ -69,15 +69,18 @@ namespace KU.Repositories.Implementations
 
 
         // For Get Records
-        public IEnumerable<GenericResult> GetRecords(Int32 MenuID, Int32 SavedFormID,Int32 SectionID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
+        public IEnumerable<GenericResult> GetRecords(Int32 MenuID, Int32 SavedFormID,Int32 SectionID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter, string CompanyName, string FromDate, string ToDate)
         {
+            if (pagesize == 0)
+                pagesize = 10;
+
             if (SavedFormID == 0)
             {
-                return _appContext.GenericResult.FromSql("sp_getrecordPage {0},{1},{2},{3},{4},{5},{6},{7}", MenuID, SectionID, 0,  orderby,  sortorder,  pagesize,  pagenumber,  filter).ToList();
+                return _appContext.GenericResult.FromSql("sp_getrecordPage {0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}", MenuID, SectionID, 0,  orderby,  sortorder,  pagesize,  pagenumber,  filter,  CompanyName,  FromDate,  ToDate).ToList();
             }
             else
             {
-                return _appContext.GenericResult.FromSql("sp_getrecordPage {0},{1},{2},{3},{4},{5},{6},{7}", MenuID, SectionID, SavedFormID,  orderby,  sortorder,  pagesize,  pagenumber,  filter).ToList();
+                return _appContext.GenericResult.FromSql("sp_getrecordPage {0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}", MenuID, SectionID, SavedFormID,  orderby,  sortorder,  pagesize,  pagenumber,  filter,  CompanyName,  FromDate,  ToDate).ToList();
             }
         }
 
