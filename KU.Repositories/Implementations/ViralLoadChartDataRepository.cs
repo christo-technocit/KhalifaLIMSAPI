@@ -14,9 +14,9 @@ namespace KU.Repositories.Implementations
         public ViralLoadChartDataRepository(DbContext context) : base(context)
         { }
 
-        public IEnumerable<ViralLoadChartData> GetAllViralLoadChartData(string ReportDateStart, string CompanyName, string Emirate)
+        public IEnumerable<ViralLoadChartData> GetAllViralLoadChartData(string ReportDateStart, string CompanyName, string Emirate, string ChartNumber)
         {
-            return _appContext.ViralLoadChartData.FromSql("sp_ViralLoadChartData {0}, {1}, {2}", ReportDateStart, CompanyName, Emirate)
+            return _appContext.ViralLoadChartData.FromSql("sp_ViralLoadChartData {0}, {1}, {2}, {3}", ReportDateStart, CompanyName, Emirate, ChartNumber)
                 .ToList();
         }
 

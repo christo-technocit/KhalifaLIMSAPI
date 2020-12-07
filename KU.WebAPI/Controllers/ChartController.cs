@@ -33,7 +33,7 @@ namespace KU.WebAPI.Controllers
         [HttpGet("GetAllViralLoadChartData")]
 
         //  public IActionResult GetAllViralLoadChartData([FromQuery]string ReportDate)
-        public IActionResult GetAllViralLoadChartData([FromQuery]string ReportDateStart, string CompanyName, string Emirate)
+        public IActionResult GetAllViralLoadChartData([FromQuery]string ReportDateStart, string CompanyName, string Emirate, string ChartNumber)
         {
 
     //        var all = ChartService.GetAllViralLoadChartData(ReportDate);
@@ -45,7 +45,7 @@ namespace KU.WebAPI.Controllers
 
         //    return Ok(parsedJson);
             //var all = UserService.GetAllIncludedData(OrderBy, SortOrder, PageSize, PageNumber, Filter);
-                var all =   ChartService.GetAllViralLoadChartData(ReportDateStart, CompanyName, Emirate);
+                var all =   ChartService.GetAllViralLoadChartData(ReportDateStart, CompanyName, Emirate, ChartNumber);
               return Ok(all);
         }
 

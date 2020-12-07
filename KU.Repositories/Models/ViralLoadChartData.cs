@@ -12,10 +12,11 @@ namespace KU.Repositories.Models
   //      public string SampleCollectionDate { get; set; }
         [Key]
         public string location { get; set; }
-        public double viralcountsperdaylocation { get; set; }
-        public double standarddeviationviralgenomes { get; set; }
+        public string ChartData { get; set; }
 
-    //    public IEnumerable<ViralLoadChartData> result { get; set; }
+        public string ChartName { get; set; }
+
+        //    public IEnumerable<ViralLoadChartData> result { get; set; }
 
     }
    

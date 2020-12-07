@@ -20,9 +20,9 @@ namespace KU.Services.Implementations
         }
 
 
-        public IEnumerable<ViralLoadChartData> GetAllViralLoadChartData(string ReportDateStart, string CompanyName, string Emirate)
+        public IEnumerable<ViralLoadChartData> GetAllViralLoadChartData(string ReportDateStart, string CompanyName, string Emirate, string ChartNumber)
         {
-            var all = unitOfWork.ViralLoadChartData.GetAllViralLoadChartData(ReportDateStart, CompanyName, Emirate);
+            var all = unitOfWork.ViralLoadChartData.GetAllViralLoadChartData(ReportDateStart, CompanyName, Emirate, ChartNumber);
 
             return mapper.Map<IEnumerable<ViralLoadChartData>>(all);
         }
