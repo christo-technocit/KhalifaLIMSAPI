@@ -48,8 +48,9 @@ namespace KU.Services.Interfaces
 
         IEnumerable<GenericResult> ImportSample(List<SampleForm> Model, string UserName); 
         IEnumerable<GenericResult> GetRecords(Int32 MenuID, Int32 SavedFormID, Int32 SectionID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter, string CompanyName, string FromDate, string ToDate);
-        GenericResultWrap GetReportCommon(long MenuID, long SectionID, string AttributeName, string BeginPeriod, string EndPeriod, string CollectedBy, string CollectedPoint, string Nationality, string Gender, string Diabetes, string SampleID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter);
-        GenericResultWrap CheckDuplicate(Int32 MenuID, Int32 SavedFormID, string AttributeName, string AttributeValue);
+        GenericResultWrap GetReportCommon(int orderby, int sortorder, int pagesize, int pagenumber, string MenuID, string SectionID, string AttributeName, string SampleCollectionDateFrom, string SampleCollectionDateTo, string ReceivingDateFrom, string ReceivingDateTo, string KUReference, string Location, string StationCode, string CompanyName, string SampleType, string SampleSubType, string SampleCollectionType, string CollectedBy, string Emirate, string SampleID, string Filter);
+        //GenericResultWrap CheckDuplicate(Int32 MenuID, Int32 SavedFormID, string AttributeName, string AttributeValue);
+        IEnumerable<GenericResult> CheckDuplicate(Int32 MenuID, Int32 SavedFormID, string AttributeName, string AttributeValue);
 
         long InsertSavedForm(SavedFormViewModel model );
         long UpdateSavedForm(SavedFormViewModel model);

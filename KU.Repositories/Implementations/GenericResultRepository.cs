@@ -85,32 +85,31 @@ namespace KU.Repositories.Implementations
         }
 
         // For Reports Begin
-        public IEnumerable<GenericResult> GetReportCommon(long TemplateID, long SectionID, string AttributeName, string BeginPeriod, string EndPeriod, string CollectedBy, string CollectedPoint, string Nationality, string Gender, string Diabetes, string SampleID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
+        public IEnumerable<GenericResult> GetReportCommon(int orderby, int sortorder, int pagesize, int pagenumber, string MenuID, string SectionID, string AttributeName,  string SampleCollectionDateFrom, string SampleCollectionDateTo, string ReceivingDateFrom, string ReceivingDateTo, string KUReference, string Location, string StationCode, string CompanyName, string SampleType, string SampleSubType, string SampleCollectionType, string CollectedBy, string Emirate, string SampleID, string Filter)
         {
-            if (string.IsNullOrEmpty(filter))
+            if (string.IsNullOrEmpty(Filter))
             {
-                filter = "";
+                Filter = "";
             }
 
-            if (SectionID.ToString() is null) { SectionID = 0; }
-            if (BeginPeriod is null) { BeginPeriod = "2000-01-01"; }
-            if (EndPeriod is null) { EndPeriod = DateTime.Now.ToString("yyyy-MM-dd"); }
-            if (CollectedBy is null) { CollectedBy = ""; }
-            if (CollectedPoint is null) { CollectedPoint = ""; }
-            if (Gender is null) { Gender = ""; }
-            if (Diabetes is null) { Diabetes = ""; }
-            if (SampleID is null) { SampleID = ""; }
+      
+            if (SampleCollectionDateFrom is null) { SampleCollectionDateFrom = "2000-01-01"; }
+            if (SampleCollectionDateTo is null) { SampleCollectionDateTo = DateTime.Now.ToString("yyyy-MM-dd"); }
 
-            //   if (pagenumber == 0) { pagenumber = 1; }
+            if (ReceivingDateFrom is null) { ReceivingDateFrom = "2000-01-01"; }
+            if (ReceivingDateTo is null) { ReceivingDateTo = DateTime.Now.ToString("yyyy-MM-dd"); }
+
             if (pagesize == 0) { pagesize = 10; }
             if (orderby == 0) { orderby = 1; }
 
 
-            List<GenericResult> TR = _appContext.GenericResult.FromSql("SP_GETDATANew {0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15}", orderby, sortorder, pagesize, pagenumber, TemplateID, SectionID, AttributeName, BeginPeriod, EndPeriod, CollectedBy, CollectedPoint, Nationality, Gender, Diabetes, SampleID, filter)
+            List<GenericResult> TR = _appContext.GenericResult.FromSql("SP_GETDATANew {0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21}", orderby, sortorder, pagesize, pagenumber, MenuID, SectionID, AttributeName, SampleCollectionDateFrom, SampleCollectionDateTo, ReceivingDateFrom, ReceivingDateTo, KUReference, Location, StationCode, CompanyName, SampleType, SampleSubType, SampleCollectionType, CollectedBy, Emirate, SampleID, Filter)
               .ToList();
             return TR;
 
         }
+
+        
 
   public IEnumerable<GenericResult> ImportSample(List<SampleForm> Model,string UserName)
             

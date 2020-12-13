@@ -136,18 +136,25 @@ namespace KU.Services.Implementations
 
 
         // Common procedure for reports
-        public GenericResultWrap GetReportCommon(long MenuID, long SectionID, string AttributeName, string BeginPeriod, string EndPeriod, string CollectedBy, string CollectedPoint, string Nationality, string Gender, string Diabetes, string SampleID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
+        public GenericResultWrap GetReportCommon(int orderby, int sortorder, int pagesize, int pagenumber, string MenuID, string SectionID, string AttributeName, string SampleCollectionDateFrom, string SampleCollectionDateTo, string ReceivingDateFrom, string ReceivingDateTo, string KUReference, string Location, string StationCode, string CompanyName, string SampleType, string SampleSubType, string SampleCollectionType, string CollectedBy, string Emirate, string SampleID, string Filter)
         {
-            var all = unitOfWork.GenericResult.GetReportCommon(MenuID, SectionID, AttributeName, BeginPeriod, EndPeriod, CollectedBy, CollectedPoint, Nationality, Gender, Diabetes, SampleID, orderby, sortorder, pagesize, pagenumber, filter);
+            var all = unitOfWork.GenericResult.GetReportCommon(orderby, sortorder, pagesize, pagenumber, MenuID, SectionID, AttributeName, SampleCollectionDateFrom, SampleCollectionDateTo, ReceivingDateFrom, ReceivingDateTo, KUReference, Location, StationCode, CompanyName, SampleType, SampleSubType, SampleCollectionType, CollectedBy, Emirate, SampleID, Filter);
             return mapper.Map<GenericResultWrap>(new GenericResultWrap { result = all });
         }
 
 
-        public GenericResultWrap CheckDuplicate(Int32 MenuID, Int32 SavedFormID, string AttributeName, string AttributeValue)
+        //public GenericResultWrap CheckDuplicate(Int32 MenuID, Int32 SavedFormID, string AttributeName, string AttributeValue)
+        //{
+        //    var all = unitOfWork.GenericResult.CheckDuplicate(MenuID, SavedFormID, AttributeName, AttributeValue);
+        //    return mapper.Map<GenericResultWrap>(new GenericResultWrap { result = all });
+        //}
+
+        public IEnumerable<GenericResult> CheckDuplicate(Int32 MenuID, Int32 SavedFormID, string AttributeName, string AttributeValue)
         {
-            var all = unitOfWork.GenericResult.CheckDuplicate(MenuID, SavedFormID, AttributeName, AttributeValue);
-            return mapper.Map<GenericResultWrap>(new GenericResultWrap { result = all });
+            var all = unitOfWork.GenericResult.CheckDuplicate( MenuID,  SavedFormID,  AttributeName,  AttributeValue);
+            return mapper.Map<IEnumerable<GenericResult>>(all);
         }
+
         //
 
 

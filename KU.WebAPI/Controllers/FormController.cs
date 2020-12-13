@@ -141,9 +141,9 @@ namespace KU.WebAPI.Controllers
             catch (Exception ex)
             {
                 logger.LogError($"Something went wrong: {ex }");
-                return StatusCode(500, ex.InnerException);
-                // return StatusCode(500, "Internal server error" );
-
+                // return StatusCode(500, ex.InnerException);
+                // // return StatusCode(500, "Internal server error" );
+                return Ok("No Records Found");
             }
 
         }
@@ -510,20 +510,29 @@ namespace KU.WebAPI.Controllers
         public async Task<IActionResult> ImportSample( List<SampleForm> Model)
 
         {
-             
-            var all = formService.ImportSample(Model,"");
-            //  string result = await formService.ImportSample(Model, UserName).ConfigureAwait(false);
+            try
+            {
+                var all = formService.ImportSample(Model, "");
+                //  string result = await formService.ImportSample(Model, UserName).ConfigureAwait(false);
 
-            //string[] s = all.Select(p => p.Items).ToArray();
-            //string jsonResponse = s[0];
-            //dynamic parsedJson = JsonConvert.DeserializeObject(jsonResponse);
-            ////return JsonConvert.SerializeObject(parsedJson, Formatting.Indented);
+                //string[] s = all.Select(p => p.Items).ToArray();
+                //string jsonResponse = s[0];
+                //dynamic parsedJson = JsonConvert.DeserializeObject(jsonResponse);
+                ////return JsonConvert.SerializeObject(parsedJson, Formatting.Indented);
 
-            //return Ok(parsedJson);
-            return Ok(all);
-        }
+                //return Ok(parsedJson);
+                return Ok(all);
+            }
+            catch (Exception ex)
+            {
 
-
-
+                logger.LogError($"Something went wrong: {ex }");
+                //  return StatusCode(500, ex.InnerException);
+                return Ok(ex.Message);
+                // return StatusCode(500, "Internal server error" );
+            }
     }
+
+
+}
 }
