@@ -126,10 +126,10 @@ namespace KU.Services.Implementations
         }
 
 
-        public IEnumerable<TotalRecords> GetReportTotal(long TemplateID, string SectionID, string AttributeName, string BeginPeriod, string EndPeriod, string CollectedBy, string CollectedPoint, string Nationality, string Gender, string Diabetes, string SampleID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
+        public IEnumerable<TotalRecords> GetReportTotal( long MenuID, string SectionID, string AttributeName, string SampleCollectionDateFrom, string SampleCollectionDateTo, string ReceivingDateFrom, string ReceivingDateTo, string KUReference, string Location, string StationCode, string CompanyName, string SampleType, string SampleSubType, string SampleCollectionType, string CollectedBy, string Emirate, string SampleID, int orderby, int sortorder, int pagesize, int pagenumber, string Filter)
         {
      
-            var all = unitOfWork.questionnaire.GetReportTotal(TemplateID, SectionID, AttributeName, BeginPeriod, EndPeriod, CollectedBy, CollectedPoint, Nationality, Gender, Diabetes, SampleID, orderby, sortorder, pagesize, pagenumber, filter);
+            var all = unitOfWork.questionnaire.GetReportTotal(MenuID, SectionID, AttributeName, SampleCollectionDateFrom, SampleCollectionDateTo, ReceivingDateFrom, ReceivingDateTo, KUReference, Location, StationCode, CompanyName, SampleType, SampleSubType, SampleCollectionType, CollectedBy, Emirate, SampleID, orderby, sortorder, pagesize, pagenumber, Filter);
             return mapper.Map<IEnumerable<TotalRecords>>(all);
       
         }

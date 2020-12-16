@@ -14,25 +14,30 @@ namespace KU.Repositories.Implementations
         { }
 
 
-        public IEnumerable<TotalRecords> GetReportTotal(long TemplateID, string SectionID, string AttributeName, string BeginPeriod, string EndPeriod, string CollectedBy, string CollectedPoint, string Nationality, string Gender, string Diabetes, string SampleID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
+        public IEnumerable<TotalRecords> GetReportTotal(long MenuID, string SectionID, string AttributeName, string SampleCollectionDateFrom, string SampleCollectionDateTo, string ReceivingDateFrom, string ReceivingDateTo, string KUReference, string Location, string StationCode, string CompanyName, string SampleType, string SampleSubType, string SampleCollectionType, string CollectedBy, string Emirate, string SampleID, Int32 orderby, Int32 sortorder, Int32 pagesize, Int32 pagenumber, string filter)
         {
-           
-
                 if (string.IsNullOrEmpty(filter))
                 {
                     filter = "";
                 }
                 if (SectionID is null) { SectionID = "0"; }
-                if (BeginPeriod is null) { BeginPeriod = "2000-01-01"; }
-                if (EndPeriod is null) { EndPeriod = DateTime.Now.ToString("yyyy-MM-dd"); }
-                if (CollectedBy is null) { CollectedBy = ""; }
-                if (CollectedPoint is null) { CollectedPoint = ""; }
-                if (Gender is null) { Gender = ""; }
-                if (Diabetes is null) { Diabetes = ""; }
-                if (SampleID is null) { SampleID = ""; }
-
-                // if (pagenumber == 0) { pagenumber = 1; }
-                if (pagesize == 0) { pagesize = 10; }
+                if (SampleCollectionDateFrom is null) { SampleCollectionDateFrom = "2000-01-01"; }
+                if (SampleCollectionDateTo is null) { SampleCollectionDateTo = DateTime.Now.ToString("yyyy-MM-dd"); }
+            if (ReceivingDateFrom is null) { ReceivingDateFrom = "2000-01-01"; }
+            if (ReceivingDateTo is null) { ReceivingDateTo = DateTime.Now.ToString("yyyy-MM-dd"); }
+            if (CollectedBy is null) { CollectedBy = ""; }
+                if (KUReference is null) { KUReference = ""; }
+                if (Location is null) { Location = ""; }
+                if (StationCode is null) {StationCode = ""; }
+            if (CompanyName is null) { CompanyName = ""; }
+            if (SampleType is null) { SampleType = ""; }
+            if (SampleSubType is null) { SampleSubType = ""; }
+            if (SampleCollectionType is null) { SampleCollectionType = ""; }
+            if (Emirate is null) { Emirate = ""; }
+            if (SampleID is null) { SampleID = ""; }
+            if (AttributeName is null) { AttributeName = ""; }
+            // if (pagenumber == 0) { pagenumber = 1; }
+            if (pagesize == 0) { pagesize = 10; }
                 if (orderby == 0) { orderby = 1; }
 
 
@@ -41,7 +46,7 @@ namespace KU.Repositories.Implementations
                 // return TR;
 
                 return _appContext.Totalrecords.
-                  FromSql("SP_GETDATA_Total {0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15}", orderby, sortorder, pagesize, pagenumber, TemplateID, SectionID, AttributeName, BeginPeriod, EndPeriod, CollectedBy, CollectedPoint, Nationality, Gender, Diabetes, SampleID, filter);
+                  FromSql("SP_GETREPORTDATA_Total {0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21}", orderby, sortorder, pagesize, pagenumber, MenuID, SectionID, AttributeName, SampleCollectionDateFrom, SampleCollectionDateTo, ReceivingDateFrom, ReceivingDateTo, KUReference, Location, StationCode, CompanyName,  SampleType,  SampleSubType,  SampleCollectionType, CollectedBy, Emirate, SampleID, filter).ToList();
         }
 
         private ApplicationDbContext _appContext => (ApplicationDbContext)_context;
