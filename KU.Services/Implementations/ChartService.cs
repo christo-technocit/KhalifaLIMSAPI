@@ -20,13 +20,21 @@ namespace KU.Services.Implementations
         }
 
 
-        public IEnumerable<ViralLoadChartData> GetAllViralLoadChartData(string ReportDateStart, string CompanyName, string Emirate, string ChartNumber)
+        public IEnumerable<ViralLoadChartData> GetAllViralLoadChartData(string ReportDateStart, string CompanyName, string Emirate, string StationCode, string ChartNumber, Int32 pagesize, Int32 pagenumber)
         {
-            var all = unitOfWork.ViralLoadChartData.GetAllViralLoadChartData(ReportDateStart, CompanyName, Emirate, ChartNumber);
+            var all = unitOfWork.ViralLoadChartData.GetAllViralLoadChartData(ReportDateStart, CompanyName, Emirate, StationCode, ChartNumber, pagesize, pagenumber);
 
             return mapper.Map<IEnumerable<ViralLoadChartData>>(all);
         }
-        
+
+        public IEnumerable<TotalRecords> GetChartRecordTotal(string ReportDateStart, string CompanyName, string Emirate, string StationCode, string ChartNumber, Int32 pagesize, Int32 pagenumber)
+        {
+
+            var all = unitOfWork.ViralLoadChartData.GetChartRecordTotal(ReportDateStart, CompanyName, Emirate, StationCode, ChartNumber, pagesize, pagenumber);
+            return mapper.Map<IEnumerable<TotalRecords>>(all);
+
+        }
+
 
     }
 }
