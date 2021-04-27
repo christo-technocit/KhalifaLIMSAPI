@@ -8,5 +8,6 @@ namespace KU.Services.Interfaces
     public interface IChartService
     {
         IEnumerable<ViralLoadChartData> GetAllViralLoadChartData(string ReportDateStart, string CompanyName, string Emirate, string ChartNumber);
+        GenericResultWrap GetStat(string FromDate, string ToDate, string Company, string Location, string Station, int ReportType);
     }
 }

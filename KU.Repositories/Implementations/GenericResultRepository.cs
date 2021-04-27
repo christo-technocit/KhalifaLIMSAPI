@@ -109,9 +109,18 @@ namespace KU.Repositories.Implementations
 
         }
 
-        
+        public IEnumerable<GenericResult> GetStat(string FromDate, string ToDate, string Company, string Location, string Station, int ReportType)
+        {
+            List<GenericResult> TR = _appContext.GenericResult.FromSql("SP_Statistics_Report {0},{1},{2},{3},{4},{5}", FromDate, ToDate, Company, Location, Station, ReportType)
+              .ToList();
+            return TR;
 
-  public IEnumerable<GenericResult> ImportSample(List<SampleForm> Model,string UserName)
+        }
+
+
+
+
+        public IEnumerable<GenericResult> ImportSample(List<SampleForm> Model,string UserName)
             
         {
    
