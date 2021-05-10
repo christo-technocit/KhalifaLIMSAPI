@@ -26,12 +26,17 @@ namespace KU.Services.Implementations
             return mapper.Map<IEnumerable<ViralLoadChartData>>(all);
         }
 
-        public GenericResultWrap GetStat(string FromDate, string ToDate, string Company, string Location, string Station, int ReportType)
+        //public GenericResultWrap GetStat(string FromDate, string ToDate, string Company, string Location, string Station, int ReportType)
+        //{
+        //    var all = unitOfWork.GenericResult.GetStat(FromDate, ToDate, Company, Location, Station, ReportType);
+        //    return mapper.Map<GenericResultWrap>(new GenericResultWrap { result = all });
+        //}
+
+        public IEnumerable<GenericResult> GetStat(string FromDate, string ToDate, string Company, string Location, string Station, int ReportType)
         {
             var all = unitOfWork.GenericResult.GetStat(FromDate, ToDate, Company, Location, Station, ReportType);
-            return mapper.Map<GenericResultWrap>(new GenericResultWrap { result = all });
+            return mapper.Map<IEnumerable<GenericResult>>(all);
         }
-
 
     }
 }

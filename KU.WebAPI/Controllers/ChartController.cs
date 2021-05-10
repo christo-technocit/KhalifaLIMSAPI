@@ -49,5 +49,40 @@ namespace KU.WebAPI.Controllers
               return Ok(all);
         }
 
+
+
+        [HttpGet("StatisticsReports")]
+        public IActionResult GetReport([FromQuery] string FromDate, string ToDate, string Company="", string Location="",  string Station="", int ReportType=1)
+        {
+
+      
+
+            try
+            {
+                var all = ChartService.GetStat (FromDate, ToDate, Company, Location, Station, ReportType);
+
+                string[] s = all.Select(p => p.Items).ToArray();
+               // string[] s = all.result.Select(p => p.Items).ToArray();
+                string jsonResponse = s[0];
+            //    jsonResponse = "{ result :" + jsonResponse + "}";
+                dynamic parsedJson = JsonConvert.DeserializeObject(jsonResponse);
+                //return JsonConvert.SerializeObject(parsedJson, Formatting.Indented);
+
+                return Ok(parsedJson);
+            }
+            catch (Exception ex)
+            {
+                //logger.LogError($"Something went wrong ex: {ex }");
+                logger.LogError($"Something went wrong ex: {ex.Message }");
+                return StatusCode(500, ex.Message);
+                // return StatusCode(500, "Internal server error" );
+
+            }
+        }
+
+
+
+
     }
+
 }
