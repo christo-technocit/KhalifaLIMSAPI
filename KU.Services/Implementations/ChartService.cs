@@ -20,23 +20,21 @@ namespace KU.Services.Implementations
         }
 
 
-        public IEnumerable<ViralLoadChartData> GetAllViralLoadChartData(string ReportDateStart, string CompanyName, string Emirate, string ChartNumber)
+        public IEnumerable<ViralLoadChartData> GetAllViralLoadChartData(string ReportDateStart, string CompanyName, string Emirate, string StationCode, string ChartNumber, Int32 pagesize, Int32 pagenumber)
         {
-            var all = unitOfWork.ViralLoadChartData.GetAllViralLoadChartData(ReportDateStart, CompanyName, Emirate, ChartNumber);
+            var all = unitOfWork.ViralLoadChartData.GetAllViralLoadChartData(ReportDateStart, CompanyName, Emirate, StationCode, ChartNumber, pagesize, pagenumber);
+
             return mapper.Map<IEnumerable<ViralLoadChartData>>(all);
         }
 
-        //public GenericResultWrap GetStat(string FromDate, string ToDate, string Company, string Location, string Station, int ReportType)
-        //{
-        //    var all = unitOfWork.GenericResult.GetStat(FromDate, ToDate, Company, Location, Station, ReportType);
-        //    return mapper.Map<GenericResultWrap>(new GenericResultWrap { result = all });
-        //}
-
-        public IEnumerable<GenericResult> GetStat(string FromDate, string ToDate, string Company, string Location, string Station, int ReportType)
+        public IEnumerable<TotalRecords> GetChartRecordTotal(string ReportDateStart, string CompanyName, string Emirate, string StationCode, string ChartNumber, Int32 pagesize, Int32 pagenumber)
         {
-            var all = unitOfWork.GenericResult.GetStat(FromDate, ToDate, Company, Location, Station, ReportType);
-            return mapper.Map<IEnumerable<GenericResult>>(all);
+
+            var all = unitOfWork.ViralLoadChartData.GetChartRecordTotal(ReportDateStart, CompanyName, Emirate, StationCode, ChartNumber, pagesize, pagenumber);
+            return mapper.Map<IEnumerable<TotalRecords>>(all);
+
         }
+
 
     }
 }

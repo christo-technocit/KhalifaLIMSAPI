@@ -33,7 +33,7 @@ namespace KU.WebAPI.Controllers
         [HttpGet("GetAllViralLoadChartData")]
 
         //  public IActionResult GetAllViralLoadChartData([FromQuery]string ReportDate)
-        public IActionResult GetAllViralLoadChartData([FromQuery]string ReportDateStart, string CompanyName, string Emirate, string ChartNumber)
+        public IActionResult GetAllViralLoadChartData([FromQuery]string ReportDateStart, string CompanyName, string Emirate, string StationCode, string ChartNumber, Int32 pagesize, Int32 pagenumber)
         {
 
     //        var all = ChartService.GetAllViralLoadChartData(ReportDate);
@@ -45,44 +45,33 @@ namespace KU.WebAPI.Controllers
 
         //    return Ok(parsedJson);
             //var all = UserService.GetAllIncludedData(OrderBy, SortOrder, PageSize, PageNumber, Filter);
-                var all =   ChartService.GetAllViralLoadChartData(ReportDateStart, CompanyName, Emirate, ChartNumber);
+                var all =   ChartService.GetAllViralLoadChartData(ReportDateStart, CompanyName, Emirate, StationCode, ChartNumber, pagesize, pagenumber);
               return Ok(all);
         }
 
 
-
-        [HttpGet("StatisticsReports")]
-        public IActionResult GetReport([FromQuery] string FromDate, string ToDate, string Company="", string Location="",  string Station="", int ReportType=1)
+        [EnableCors("MyPolicy")]
+        [HttpGet("ChartRecordTotal")]
+        public IActionResult GetChartRecordTotal([FromQuery] string ReportDateStart, string CompanyName, string Emirate, string StationCode, string ChartNumber, Int32 pagesize, Int32 pagenumber)
         {
-
-      
 
             try
             {
-                var all = ChartService.GetStat (FromDate, ToDate, Company, Location, Station, ReportType);
+                var all1 = ChartService.GetChartRecordTotal(ReportDateStart, CompanyName, Emirate, StationCode, ChartNumber, pagesize, pagenumber);
 
-                string[] s = all.Select(p => p.Items).ToArray();
-               // string[] s = all.result.Select(p => p.Items).ToArray();
-                string jsonResponse = s[0];
-            //    jsonResponse = "{ result :" + jsonResponse + "}";
-                dynamic parsedJson = JsonConvert.DeserializeObject(jsonResponse);
-                //return JsonConvert.SerializeObject(parsedJson, Formatting.Indented);
 
-                return Ok(parsedJson);
+                return Ok(all1);
             }
             catch (Exception ex)
             {
-                //logger.LogError($"Something went wrong ex: {ex }");
+
+
                 logger.LogError($"Something went wrong ex: {ex.Message }");
+
                 return StatusCode(500, ex.Message);
                 // return StatusCode(500, "Internal server error" );
 
             }
         }
-
-
-
-
     }
-
 }
