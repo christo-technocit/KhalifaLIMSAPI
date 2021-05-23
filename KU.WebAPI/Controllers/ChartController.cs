@@ -50,6 +50,21 @@ namespace KU.WebAPI.Controllers
         }
 
 
+        [HttpGet("StatisticsReports")]
+        public IActionResult GetReport([FromQuery] string FromDate, string ToDate, string Company = "", string Location = "", string Station = "", int ReportType = 1)
+        {
+            {
+                var all = ChartService.GetStat(FromDate, ToDate, Company, Location, Station, ReportType);
+                string[] s = all.Select(p => p.Items).ToArray();
+                // string[] s = all.result.Select(p => p.Items).ToArray();
+                string jsonResponse = s[0];
+                //    jsonResponse = "{ result :" + jsonResponse + "}";
+                dynamic parsedJson = JsonConvert.DeserializeObject(jsonResponse);
+                //return JsonConvert.SerializeObject(parsedJson, Formatting.Indented);
+                return Ok(parsedJson);
+            }
+        }
+
         [EnableCors("MyPolicy")]
         [HttpGet("ChartRecordTotal")]
         public IActionResult GetChartRecordTotal([FromQuery] string ReportDateStart, string CompanyName, string Emirate, string StationCode, string ChartNumber, Int32 pagesize, Int32 pagenumber)

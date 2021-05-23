@@ -9,7 +9,7 @@ using System.Text;
 
 namespace KU.Services.Implementations
 {
-    public class ChartService: IChartService 
+    public class ChartService : IChartService
     {
         private readonly IUnitOfWork unitOfWork;
         private readonly IMapper mapper;
@@ -35,6 +35,10 @@ namespace KU.Services.Implementations
 
         }
 
-
+        public IEnumerable<GenericResult> GetStat(string FromDate, string ToDate, string Company, string Location, string Station, int ReportType)
+        {
+            var all = unitOfWork.GenericResult.GetStat(FromDate, ToDate, Company, Location, Station, ReportType);
+            return mapper.Map<IEnumerable<GenericResult>>(all);
+        }
     }
 }
